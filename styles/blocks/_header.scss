@@ -1,0 +1,90 @@
+@use '../helpers/' as *;
+
+.header {
+
+  background-color: #DEEEFC;
+  &__inner {
+    padding-top: rem(36);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: rem(50);
+
+    @include mobile {
+      padding-inline: rem(20);
+    }
+  }
+
+  &__nav {
+    &-list {
+      display: flex;
+      column-gap: rem(36);
+
+      @include tablet {
+        row-gap: rem(10);
+        align-items: center;
+        flex-direction: column;
+      }
+    }
+
+    &-link {
+      position: relative;
+      &::after {
+        position: absolute;
+        content: '';
+        left: 50%;
+        top: 100%;
+        translate: -50%;
+        width: 0;
+        height: 1px;
+        background-color: var(--color-black);
+        transition-duration: var(--transition-duration);
+
+        @include tablet {
+          background-color: var(--color-white);
+        }
+      }
+      &:hover {
+        &::after {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    column-gap: rem(24);
+
+    @include tablet {
+      row-gap: rem(10);
+      flex-direction: column;
+    }
+  }
+
+  &__overlay {
+    display: flex;
+    align-items: center;
+    column-gap: rem(32);
+
+    @include tablet {
+      row-gap: rem(30);
+      position: fixed;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background-color: var(--color-blue-dark);
+      &:not(.is-active) {
+        @include hide;
+
+        translate: 100%;
+      }
+    }
+  }
+
+  @include tablet {
+    color: var(--color-white);
+  }
+}

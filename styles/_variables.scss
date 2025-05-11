@@ -1,0 +1,20 @@
+@use 'helpers' as *;
+
+:root {
+  --font-family-base: 'IBM Plex Sans', sans-serif;
+  --font-family-alternate: 'IBM Plex Serif', sans-serif;
+
+  --color-blue-light: #1064E5;
+  --color-blue-dark: #0046B0;
+  --color-black: #061224;
+  --color-gray: #595A5B;
+  --color-white: #FFFFFF;
+
+  --border: #{rem(1)} solid var(--color-blue-light);
+  --border-radius-button: #{rem(30)};
+
+  --transition-duration: 0.2s;
+
+  --container-width: #{rem(1232)};
+  --container-padding-x: #{rem(15)};
+}

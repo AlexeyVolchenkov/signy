@@ -1,0 +1,25 @@
+@use '../helpers/' as *;
+
+.button {
+  padding: rem(11) rem(32);
+  font-weight: 500;
+  border: var(--border);
+  border-radius: var(--border-radius-button);
+  background-color: var(--color-blue-light);
+  color: var(--color-white);
+
+  &--transparent {
+    background-color: transparent;
+    color: var(--color-black);
+  }
+
+  @include hover {
+    background-color: var(--color-blue-dark);
+    color: var(--color-white);
+  }
+
+  @include tablet {
+    color: var(--color-white);
+    background-color: var(--color-blue-light);
+  }
+}
