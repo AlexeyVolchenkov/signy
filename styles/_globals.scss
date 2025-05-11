@@ -1,5 +1,11 @@
 @use 'helpers' as *;
 
+html {
+  &.is-lock {
+    overflow: hidden;
+  }
+}
+
 body {
   line-height: 1.6;
   color: var(--color-black);

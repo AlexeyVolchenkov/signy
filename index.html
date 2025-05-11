@@ -8,7 +8,7 @@
   <script src="./scripts/main.js" type="module"></script>
 </head>
 <body>
-  <header class="header">
+  <header class="header" data-js-header>
     <div class="header__inner container">
       <a href="#" class="header__logo logo">
         <img 
@@ -19,7 +19,7 @@
       />
       </a>
 
-      <div class="header__overlay is-active">
+      <div class="header__overlay" data-js-header-overlay>
         <nav class="header__nav">
           <ul class="header__nav-list">
             <li class="header__nav-item">
@@ -45,9 +45,10 @@
 
       <button 
         type="button" 
-        class="header__burger burger-button is-active visible-tablet"
+        class="header__burger burger-button visible-tablet"
         title="Open menu"
         aria-label="Open menu"
+        data-js-header-burger-button
       >
         <span class="burger-button__line"></span>
         <span class="burger-button__line"></span>
@@ -56,5 +57,86 @@
       
     </div>
   </header>
+
+  <main>
+    
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__body">
+        <a href="#" class="footer__logo">
+          <img 
+            src="./icons/logo_white.svg" 
+            alt=""
+            width="131" height="40" loading="lazy"
+          />
+        </a>
+        <ul class="footer__list grid grid--cols-2">
+          <div class="grid__column">
+            <li class="footer__item">
+            <a href="#" class="footer__link">Про нас</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Цены</a>
+          </li>
+          </div>
+          <div class="grid__column">
+            <li class="footer__item">
+            <a href="#" class="footer__link">Блог</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Контакты</a>
+          </li>
+          </div>
+          <div class="grid__column">
+            <li class="footer__item">
+            <a href="#" class="footer__link">Вход</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Регистрация</a>
+          </li>
+          </div>
+        </ul>
+        <div class="footer__soc1als">
+          <ul class="footer__soc1als-list">
+            <li class="footer__soc1als-item">
+              <a 
+                href="mailto:infosmartsign@smarttender.biz" 
+                class="footer__socials-mail"
+                aria-label="Email"
+                title="Email"
+              >
+                infosmartsign@smarttender.biz
+              </a>
+            </li>
+            <li class="footer__soc1als-item">
+              <a 
+                href="#" 
+                class="footer__socials-facebook"
+                aria-label="Facebook"
+                title="Facebook"
+              >
+                Facebook
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__contacts">
+          <address class="footer__contacts-address">
+            пр-т Миколи Бажана, 14 А 
+            Київ, 02072
+          </address>
+          <a href="tel:+0800750643" class="footer__contacts-number">0 800 750643</a>
+          <a href="tel:+380443345643" class="footer__contacts-number">+380 44 334 56 43</a>
+          <a href="tel:+380443388643" class="footer__contacts-number">+380 44 338 86 43</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__extra">
+
+    </div>
+    
+  </footer>
 </body>
 </html>

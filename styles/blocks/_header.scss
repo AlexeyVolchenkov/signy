@@ -16,6 +16,10 @@
   }
 
   &__nav {
+    @media tablet {
+      overflow-y: auto;
+    }
+    
     &-list {
       display: flex;
       column-gap: rem(36);
@@ -76,6 +80,8 @@
       flex-direction: column;
       justify-content: center;
       background-color: var(--color-blue-dark);
+      transition-duration: var(--transition-duration);
+      z-index: 100;
       &:not(.is-active) {
         @include hide;
 

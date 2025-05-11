@@ -1,0 +1,18 @@
+@use '../helpers/' as *;
+
+.grid {
+  --columns: 1;
+
+  display: grid;
+  grid-template-columns: repeat(var(--columns), 1fr);
+
+  &--cols-2 {
+    --columns: 2;
+    row-gap: rem(32);
+
+    @include tablet {
+      --columns: 1;
+      row-gap: 0;
+    }
+  }
+}

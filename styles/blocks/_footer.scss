@@ -1,0 +1,90 @@
+@use '../helpers/' as *;
+
+.footer {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  
+
+  &__inner {
+    padding-inline: fluid(103, 20);
+    padding-block: fluid(30, 20);
+  }
+
+  &__body {
+    display: grid;
+    align-items: start;
+    grid-template-columns: 19% 33% 29% 18%;
+    column-gap: rem(10);
+
+    @include tablet {
+      grid-template-columns: 33% 20% 1fr;
+      grid-template-areas: 
+      'logo links soc1als'
+      'logo links contacts';
+    }
+
+    @include mobile {
+      grid-template-columns: 1fr;
+      grid-template-areas: 
+      'logo'
+      'links'
+      'soc1als'
+      'contacts';
+      row-gap: rem(30);
+    }
+  }
+  
+  &__list {
+    @include tablet {
+      grid-area: links;
+    }
+  }
+
+  &__list,
+  &__soc1als {
+  font-weight: 500;
+  }
+
+  &__logo {
+    fill: red;
+    @include tablet {
+      grid-area: logo;
+    }
+  }
+
+  &__item {
+    @include tablet {
+      padding-bottom: rem(10);
+    }
+  }
+
+  &__link {
+    @include hover {
+      color: var(--color-blue-light);
+    }
+  }
+
+  &__soc1als {
+    &-list {
+      display: grid;
+      justify-content: flex-start;
+      row-gap: rem(10);
+    }
+
+    @include tablet {
+      grid-area: soc1als;
+    }
+  }
+
+  &__contacts {
+    display: grid;
+    justify-content: flex-start;
+    align-items: flex-start;
+    row-gap: rem(7);
+    opacity: 0.8;
+
+    @include tablet {
+      grid-area: contacts;
+    }
+  }
+}
