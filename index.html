@@ -57,9 +57,183 @@
       
     </div>
   </header>
+  
 
   <main>
-    
+    <section class="hero">
+      <div class="hero__inner container">
+        <div class="hero__body">
+          <h1 class="hero__title">Цифровой документооборот в три этапа:</h1>
+          <div class="hero__pagination pagination" data-js-pagination>
+            <ul class="pagination__list">
+              <li class="pagination__item">
+                <button 
+                  class="pagination__button is-active"
+                  type="button"
+                  id="pagination-number-1"
+                  aria-controls="pagination-image-1"
+                  aria-current="true"
+                  data-js-pagination-button
+                >
+                  1
+                </button>
+                <span aria-hidden="true" class="pagination__separator"></span>
+              </li>
+              <li class="pagination__item">
+                <button 
+                  class="pagination__button"
+                  type="button"
+                  id="pagination-number-2"
+                  aria-controls="pagination-image-2"
+                  data-js-pagination-button
+                >
+                  2
+                </button>
+                <span aria-hidden="true" class="pagination__separator"></span>
+              </li>
+              <li class="pagination__item">
+                <button 
+                  class="pagination__button"
+                  type="button"
+                  id="pagination-number-3"
+                  aria-controls="pagination-image-3"
+                  data-js-pagination-button
+                >
+                  3
+                </button>
+              </li>
+            </ul>
+          </div>
+          <h2 class="hero__subtitle">Быстрая регистрация</h2>
+          <div class="hero__description">
+            <p>Мы создали, возможно, самую простую регистрацию. Регистрируйся, получай полный доступ к сервису и 1000 подписей документов в подарок!</p>
+          </div>
+          <button type="button" class="hero__button button">
+            Попробовать Бесплатно
+          </button>
+        </div>
+      </div>
+      <div class="hero__extra">
+        <div class="hero__extra-pagination pagination pagination--circle" data-js-pagination>
+          <ul class="pagination__list">
+              <li class="pagination__item">
+                <button 
+                  class="pagination__button is-active"
+                  type="button"
+                  id="pagination-number-1"
+                  aria-controls="pagination-image-1"
+                  aria-current="true"
+                  data-js-pagination-button
+                >
+                <span class="icon icon--circle"></span>
+                </button>
+              </li>
+              <li class="pagination__item">
+                <button 
+                  class="pagination__button"
+                  type="button"
+                  id="pagination-number-2"
+                  aria-controls="pagination-image-2"
+                  data-js-pagination-button
+                >
+                <span class="icon icon--circle"></span>
+                </button>
+              </li>
+              <li class="pagination__item">
+                <button 
+                  class="pagination__button"
+                  type="button"
+                  id="pagination-number-3"
+                  aria-controls="pagination-image-3"
+                  data-js-pagination-button
+                >
+                <span class="icon icon--circle"></span>
+                </button>
+              </li>
+            </ul>
+        </div>
+      </div>
+      <div class="hero__wrapper-image">
+        <img 
+          src="images/hero/1.png" 
+          alt="" class="hero__image is-active"
+          id="pagination-image-1"
+          aria-labelledby="pagination-number-1"
+          width="1303" height="725"
+          data-js-pagination-content
+        >
+      </div>
+
+      <div class="hero__wrapper-image">
+        <img 
+          src="images/hero/2.png" 
+          alt="" class="hero__image"
+          id="pagination-image-2"
+          aria-labelledby="pagination-number-2"
+          width="1303" height="725"
+          data-js-pagination-content
+        >
+      </div>
+
+      <div class="hero__wrapper-image">
+        <img 
+          src="images/hero/3.png" 
+          alt="" class="hero__image"
+          id="pagination-image-3"
+          aria-labelledby="pagination-number-3"
+          width="1303" height="725"
+          data-js-pagination-content
+        >
+      </div>
+    </section>
+    <section class="advantages">
+      <div class="advantages__inner">
+        <ul class="advantages__list">
+          <li class="advantages__item">
+            <img 
+              src="icons/advantages/1.svg" 
+              alt="" 
+              class="advantages__item-image"
+              width="60" height="60"
+            />
+            <div class="advantages__item-info">
+              <h3 class="advantages__item-title">Моментально</h3>
+              <div class="advantages__item-description">
+                <p>Никаких задержек. 1 секунда на подписание</p>
+              </div>
+            </div>
+          </li>
+          <li class="advantages__item">
+            <img 
+              src="icons/advantages/2.svg" 
+              alt="" 
+              class="advantages__item-image"
+              width="60" height="60"
+            />
+            <div class="advantages__item-info">
+              <h3 class="advantages__item-title">Глобально</h3>
+              <div class="advantages__item-description">
+                <p>Сервис доступен 24\7 со всех устройств</p>
+              </div>
+            </div>
+          </li>
+          <li class="advantages__item">
+            <img 
+              src="icons/advantages/3.svg" 
+              alt="" 
+              class="advantages__item-image"
+              width="60" height="60"
+            />
+            <div class="advantages__item-info">
+              <h3 class="advantages__item-title">Экономно</h3>
+              <div class="advantages__item-description">
+                <p>В 30 раз дешевле чем почта и курьеры</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
   </main>
 
   <footer class="footer">

@@ -1,0 +1,37 @@
+@use '../helpers/' as *;
+
+.pagination {
+  &__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: rem(12);
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    column-gap: rem(16);
+  }
+
+  &__button {
+    border: none;
+    background: none;
+    opacity: 0.6;
+    font-size: rem(18);
+    font-weight: 500;
+
+    &.is-active {
+      opacity: 1;
+      font-size: rem(24);
+    }
+  }
+
+  &__separator {
+    display: inline-block;
+    width: rem(17.5);
+    height: rem(1.5);
+    background-color: var(--color-blue-light);
+  }
+
+}

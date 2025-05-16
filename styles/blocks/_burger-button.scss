@@ -23,12 +23,13 @@
         transform-origin: 0;
         &:first-child {
           rotate: 45deg;
-          translate: 0 -0.42rem;
+          translate: 0.25rem 0.15rem;
         }
 
         &:nth-child(2) {
           align-self: flex-end;
           rotate: -45deg;
+          translate: 0.25rem 0.6rem;
         }
       }
     } 

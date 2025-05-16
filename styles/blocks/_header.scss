@@ -1,9 +1,10 @@
 @use '../helpers/' as *;
 
 .header {
-
   background-color: #DEEEFC;
   &__inner {
+    position: relative;
+    z-index: 300;
     padding-top: rem(36);
     display: flex;
     justify-content: space-between;
@@ -48,7 +49,8 @@
           background-color: var(--color-white);
         }
       }
-      &:hover {
+
+      @include hover {
         &::after {
           width: 100%;
         }
@@ -64,6 +66,12 @@
     @include tablet {
       row-gap: rem(10);
       flex-direction: column;
+    }
+
+    &-login {
+      @include tablet {
+        width: 100%;
+      }
     }
   }
 

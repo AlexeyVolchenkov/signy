@@ -1,0 +1,17 @@
+@use '../helpers/' as *;
+
+.icon {
+  display: inline-flex;
+
+  &::after {
+    --size: #{rem(10)};
+
+    @include square(var(--size));
+    content: '';
+  }
+
+  &--circle {
+    border: 1px solid blue;
+    border-radius: 50%;
+  }
+}
