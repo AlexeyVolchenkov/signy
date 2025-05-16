@@ -719,6 +719,19 @@ button[aria-label]::before {
 .hero__description {
   max-width: 28.125rem;
 }
+.hero__description:not(.is-active) {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  margin: -1px !important;
+  border: 0 !important;
+  padding: 0 !important;
+  white-space: nowrap !important;
+  clip-path: inset(100%) !important;
+  clip: rect(0 0 0 0) !important;
+  overflow: hidden !important;
+  translate: 100%;
+}
 .hero__extra {
   padding-top: clamp(1.625rem, -0.4593230404rem + 8.5510688836vw, 6.125rem);
   padding-bottom: clamp(0.8125rem, 0.3493171021rem + 1.9002375297vw, 1.8125rem);
@@ -754,6 +767,19 @@ button[aria-label]::before {
     clip: rect(0 0 0 0) !important;
     overflow: hidden !important;
   }
+}
+.hero__subtitle:not(.is-active) {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  margin: -1px !important;
+  border: 0 !important;
+  padding: 0 !important;
+  white-space: nowrap !important;
+  clip-path: inset(100%) !important;
+  clip: rect(0 0 0 0) !important;
+  overflow: hidden !important;
+  translate: 100%;
 }
 
 .advantages {
