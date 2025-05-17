@@ -4,7 +4,10 @@ class Pagination {
   selector = {
     root: rootSelector,
     button: '[data-js-pagination-button]',
-    content: '[data-js-pagination-content]',
+    buttonExtra: '[data-js-pagination-button-extra]',
+    contentImage: '[data-js-pagination-content-image]',
+    contentSubtitle: '[data-js-pagination-content-subtitle]',
+    contentDescription: '[data-js-pagination-content-description]',
   }
 
   stateClasses = {
@@ -18,7 +21,12 @@ class Pagination {
   constructor(rootElement) {
     this.rootElement = rootElement
     this.buttonElements = this.rootElement.querySelectorAll(this.selector.button)
-    this.contentElements = document.querySelectorAll(this.selector.content)
+    this.buttonExtraElements = this.rootElement.querySelectorAll(this.selector.buttonExtra)
+    this.contentImageElements = this.rootElement.querySelectorAll(this.selector.contentImage)
+    this.contentSubtitleElements = this.rootElement.querySelectorAll(this.selector.contentSubtitle)
+    this.contentDescriptionElements = this.rootElement.querySelectorAll(this.selector.contentDescription)
+
+
     this.state = {
       activePaginationIndex: [...this.buttonElements].findIndex(
         (element) => element.classList.contains(this.stateClasses.isActive)
@@ -37,7 +45,25 @@ class Pagination {
       element.setAttribute(this.stateAttributes.ariaCurrent, isActive.toString())
     })
 
-    this.contentElements.forEach((element, index) => {
+    this.buttonExtraElements.forEach((element, index) => {
+      const isActive = activePaginationIndex === index
+      element.classList.toggle(this.stateClasses.isActive, isActive)
+      element.setAttribute(this.stateAttributes.ariaCurrent, isActive.toString())
+    })
+
+    this.contentImageElements.forEach((element, index) => {
+      const isActive = activePaginationIndex === index
+
+      element.classList.toggle(this.stateClasses.isActive, isActive)
+    })
+
+    this.contentSubtitleElements.forEach((element, index) => {
+      const isActive = activePaginationIndex === index
+
+      element.classList.toggle(this.stateClasses.isActive, isActive)
+    })
+
+    this.contentDescriptionElements.forEach((element, index) => {
       const isActive = activePaginationIndex === index
 
       element.classList.toggle(this.stateClasses.isActive, isActive)
@@ -55,6 +81,12 @@ class Pagination {
         this.onButtonClick(index)
       })
     })
+
+    this.buttonExtraElements.forEach((element, index) => {
+      element.addEventListener('click', () => {
+        this.onButtonClick(index)
+      })
+    })
   }
 }
 
@@ -66,7 +98,6 @@ class PaginationCollection {
   init() {
     document.querySelectorAll(rootSelector).forEach((element) => {
       new Pagination(element);
-      console.log(element);
     })
   }
 }

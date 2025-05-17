@@ -60,11 +60,11 @@
   
 
   <main>
-    <section class="hero">
+    <section class="hero" data-js-pagination>
       <div class="hero__inner container">
         <div class="hero__body">
           <h1 class="hero__title">Цифровой документооборот в три этапа:</h1>
-          <div class="hero__pagination pagination" data-js-pagination>
+          <div class="hero__pagination pagination">
             <ul class="pagination__list">
               <li class="pagination__item">
                 <button 
@@ -104,16 +104,16 @@
               </li>
             </ul>
           </div>
-          <h2 class="hero__subtitle is-active">Быстрая регистрация</h2>
-          <div class="hero__description is-active">
+          <h2 class="hero__subtitle is-active" data-js-pagination-content-subtitle>Быстрая регистрация</h2>
+          <div class="hero__description is-active" data-js-pagination-content-description>
             <p>Мы создали, возможно, самую простую регистрацию. Регистрируйся, получай полный доступ к сервису и 1000 подписей документов в подарок!</p>
           </div>
-          <h2 class="hero__subtitle">Загрузи документ</h2>
-          <div class="hero__description">
+          <h2 class="hero__subtitle" data-js-pagination-content-subtitle>Загрузи документ</h2>
+          <div class="hero__description" data-js-pagination-content-description>
             <p>Загружай в систему любой документ которые надо подписать, договор, акт выполненных работ, да что угодно</p>
           </div>
-          <h2 class="hero__subtitle">Подпиши и отправь</h2>
-          <div class="hero__description">
+          <h2 class="hero__subtitle" data-js-pagination-content-subtitle>Подпиши и отправь</h2>
+          <div class="hero__description" data-js-pagination-content-description>
             <p>Подписывай своей электронно-цифровой подписью и за долю секунды отправь партнеру или компании. Он подписывает в ответ и все! Готово!</p>
           </div>
           <button type="button" class="hero__button button">
@@ -122,7 +122,7 @@
         </div>
       </div>
       <div class="hero__extra">
-        <div class="hero__extra-pagination pagination pagination--circle" data-js-pagination>
+        <div class="hero__extra-pagination pagination pagination--circle">
           <ul class="pagination__list">
               <li class="pagination__item">
                 <button 
@@ -131,7 +131,7 @@
                   id="pagination-number-1"
                   aria-controls="pagination-image-1"
                   aria-current="true"
-                  data-js-pagination-button
+                  data-js-pagination-button-extra
                 >
                 <span class="icon icon--circle"></span>
                 </button>
@@ -142,7 +142,7 @@
                   type="button"
                   id="pagination-number-2"
                   aria-controls="pagination-image-2"
-                  data-js-pagination-button
+                  data-js-pagination-button-extra
                 >
                 <span class="icon icon--circle"></span>
                 </button>
@@ -153,7 +153,7 @@
                   type="button"
                   id="pagination-number-3"
                   aria-controls="pagination-image-3"
-                  data-js-pagination-button
+                  data-js-pagination-button-extra
                 >
                 <span class="icon icon--circle"></span>
                 </button>
@@ -168,7 +168,7 @@
           id="pagination-image-1"
           aria-labelledby="pagination-number-1"
           width="1303" height="725"
-          data-js-pagination-content
+          data-js-pagination-content-image
         >
       </div>
 
@@ -179,7 +179,7 @@
           id="pagination-image-2"
           aria-labelledby="pagination-number-2"
           width="1303" height="725"
-          data-js-pagination-content
+          data-js-pagination-content-image
         >
       </div>
 
@@ -190,7 +190,7 @@
           id="pagination-image-3"
           aria-labelledby="pagination-number-3"
           width="1303" height="725"
-          data-js-pagination-content
+          data-js-pagination-content-image
         >
       </div>
     </section>
