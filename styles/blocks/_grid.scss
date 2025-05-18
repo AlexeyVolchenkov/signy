@@ -15,4 +15,9 @@
       row-gap: 0;
     }
   }
+
+  &--cols-4 {
+    --columns: 4;
+    column-gap: rem(32);
+  }
 }

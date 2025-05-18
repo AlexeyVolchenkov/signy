@@ -1,0 +1,65 @@
+@use '../helpers/' as *;
+
+.services {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__list {
+    @include tablet {
+      --columns: 2;
+      row-gap: rem(50);
+    }
+
+    @include mobile {
+      --columns: 1;
+      row-gap: rem(20);
+    }
+  }
+
+  &__inner {
+    padding-top: fluid(57, 20);
+    padding-bottom: fluid(98, 33);
+
+    display: grid;
+    row-gap: rem(63);
+    @include mobile {
+    row-gap: rem(20);
+    }
+  }
+
+  &__title {
+    display: flex;
+    justify-content: center;
+    @include fluid-text(40, 20);
+  }
+
+  &__item {
+    background-color: var(--color-gray-blue);
+    padding: rem(25);
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(30);
+    justify-content: flex-start;
+    width: 100%;
+
+    &-title {
+      font-weight: 500;
+      font-size: rem(28);
+    }
+
+    &-price {
+      &-number {
+        font-weight: 700;
+        font-size: rem(48);
+      }
+    }
+
+    &-button {
+      justify-items: end;
+      align-self: flex-end;
+      margin-top: auto;
+      width: 100%;
+    }
+  }
+}

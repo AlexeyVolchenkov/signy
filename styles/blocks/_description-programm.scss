@@ -20,6 +20,17 @@
     &:nth-child(even) {
       flex-direction: row-reverse;
     }
+
+    @include tablet {
+      row-gap: rem(31);
+      align-items: center;
+
+      flex-direction: column;
+
+      &:nth-child(even) {
+      flex-direction: column;
+    }
+    }
   }
 
 }

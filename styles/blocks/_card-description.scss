@@ -9,6 +9,10 @@
     row-gap: rem(19);
     justify-items: start;
     width: fluid(502, 280);
+
+    @include tablet {
+      justify-items: center;
+    }
   }
   
   &__list {
@@ -24,11 +28,5 @@
     &::before {
       content: '-';
     }
-  }
-
-  &__image {
-    object-fit: cover;
-    object-position: left center;
-    aspect-ratio: 16/9;
   }
 }
