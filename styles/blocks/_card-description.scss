@@ -1,0 +1,10 @@
+@use '../helpers/' as *;
+
+.card-description {
+  display: flex;
+
+  &__body {
+    width: fluid(502, 280);
+  }
+
+}

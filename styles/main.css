@@ -242,6 +242,7 @@ svg * {
   --color-black: #061224;
   --color-gray: #595A5B;
   --color-white: #FFFFFF;
+  --color-gray-light: #D8F1F0;
   --border: 0.0625rem solid var(--color-blue-light);
   --border-radius-button: 1.875rem;
   --transition-duration: 0.2s;
@@ -812,6 +813,28 @@ button[aria-label]::before {
   display: flex;
   column-gap: 1.25rem;
   max-width: 19.125rem;
+}
+
+.card-description {
+  display: flex;
+}
+.card-description__body {
+  width: clamp(17.5rem, 11.0733372922rem + 26.3657957245vw, 31.375rem);
+}
+
+.description-programm {
+  background-color: var(--color-gray-light);
+}
+.description-programm__inner {
+  padding-top: clamp(1.375rem, 0.3617874109rem + 4.1567695962vw, 3.5625rem);
+  padding-bottom: clamp(2.75rem, 1.3315023753rem + 5.8194774347vw, 5.8125rem);
+}
+.description-programm__list {
+  display: grid;
+  row-gap: 3.5625rem;
+}
+.description-programm__item {
+  display: flex;
 }
 
 /*# sourceMappingURL=main.css.map */

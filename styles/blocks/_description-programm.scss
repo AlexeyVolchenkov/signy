@@ -1,0 +1,20 @@
+@use '../helpers/' as *;
+
+.description-programm {
+  background-color: var(--color-gray-light);
+
+  &__inner {
+    padding-top: fluid(57, 22);
+    padding-bottom: fluid(93, 44);
+  }
+
+  &__list {
+    display: grid;
+    row-gap: rem(57);
+  }
+
+  &__item {
+    display: flex;
+  }
+
+}
