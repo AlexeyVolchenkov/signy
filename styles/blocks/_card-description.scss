@@ -2,9 +2,33 @@
 
 .card-description {
   display: flex;
+  column-gap: fluid(107, 29);
 
   &__body {
+    display: grid;
+    row-gap: rem(19);
+    justify-items: start;
     width: fluid(502, 280);
   }
+  
+  &__list {
+    display: grid;
+    row-gap: rem(10);
+  }
 
+  &__item {
+    display: flex;
+    column-gap: rem(8);
+    align-items: start;
+
+    &::before {
+      content: '-';
+    }
+  }
+
+  &__image {
+    object-fit: cover;
+    object-position: left center;
+    aspect-ratio: 16/9;
+  }
 }

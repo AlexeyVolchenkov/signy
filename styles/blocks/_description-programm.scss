@@ -4,6 +4,8 @@
   background-color: var(--color-gray-light);
 
   &__inner {
+    display: flex;
+    justify-content: center;
     padding-top: fluid(57, 22);
     padding-bottom: fluid(93, 44);
   }
@@ -15,6 +17,9 @@
 
   &__item {
     display: flex;
+    &:nth-child(even) {
+      flex-direction: row-reverse;
+    }
   }
 
 }
