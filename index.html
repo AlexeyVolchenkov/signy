@@ -589,7 +589,7 @@
             poster="images/video-interview/preview.jpg"
             data-js-video-player-video
           ></video>
-          <div class="video-player__panel is-active">
+          <div class="video-player__panel is-active" data-js-video-player-panel>
             <button 
               class="video-player__play-button" 
               type="button"
@@ -598,11 +598,10 @@
               data-js-video-player-play-button
             >
               <svg width="102" height="102" viewBox="0 0 102 102" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g>
-                  <path d="M0 51C0 22.8335 22.8335 0 51 0C79.1665 0 102 22.8335 102 51C102 79.1665 79.1665 102 51 102C22.8335 102 0 79.1665 0 51Z" fill="#FFFFFF" fill-rule="evenodd" />
-                  <path d="M19 0L35.4545 28.5L2.54552 28.5L19 0Z" fill="#1064E5" fill-rule="evenodd" transform="matrix(-0 1 -1 -0 70 32)" />
-                </g>
+                <circle cx="51" cy="51" r="51" fill="none"/>
+                <path d="M70 51L41.5 67.4545L41.5 34.5455L70 51Z" fill="#1064E5"/>
               </svg>
+
             </button>
           </div>
         </div>
