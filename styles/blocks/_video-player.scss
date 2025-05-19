@@ -1,0 +1,17 @@
+@use '../helpers/' as *;
+
+.video-player {
+  position: relative;
+
+  &__video {
+    width: 100%;
+    object-fit: cover;
+  }
+
+
+  &__panel {
+    position: absolute;
+    
+    @include abs-center;
+  }
+}

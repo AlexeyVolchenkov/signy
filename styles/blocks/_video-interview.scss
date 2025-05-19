@@ -1,0 +1,15 @@
+@use '../helpers/' as *;
+
+.video-interview {
+  &__inner {
+    flex-direction: column;
+    align-items: center;
+    padding-block: rem(50);
+  }
+
+  &__title {
+    @include fluid-text(40, 20);
+
+    padding-bottom: rem(20);
+  }
+}

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="102" height="102" viewBox="0 0 102 102" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g>
+    <path d="M0 51C0 22.8335 22.8335 0 51 0C79.1665 0 102 22.8335 102 51C102 79.1665 79.1665 102 51 102C22.8335 102 0 79.1665 0 51Z" fill="#FFFFFF" fill-rule="evenodd" />
+    <path d="M19 0L35.4545 28.5L2.54552 28.5L19 0Z" fill="#1064E5" fill-rule="evenodd" transform="matrix(-0 1 -1 -0 70 32)" />
+  </g>
+</svg>

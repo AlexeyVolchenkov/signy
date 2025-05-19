@@ -1,0 +1,15 @@
+@use '../helpers/' as *;
+
+.test {
+  width: 100%;
+  height: 200px;
+  background-color: rgb(216, 216, 255);
+  &__inner {
+    overflow-y: auto;
+  }
+
+  &__list {
+    display: flex;
+    flex-shrink: 0;
+  }
+}
