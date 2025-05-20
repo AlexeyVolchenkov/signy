@@ -1,0 +1,53 @@
+@use '../helpers/' as *;
+
+.accordion {
+  &__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(25);
+  }
+
+  &__item {
+    position: relative;
+    max-width: rem(530);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: rem(15);
+
+    
+    &::before {
+      position: absolute;
+      content: '-';
+      left: -1rem;
+      top: 0;
+    }
+
+    &[aria-selected="false"]::before {
+      content: '+';
+    }
+
+    &-button {
+      border: none;
+      background-color: transparent;
+    }
+
+    &-title {
+      @include fluid-text(18, 14);
+
+      text-align: start;
+    }
+
+    &-content {
+      @include fluid-text(18, 14);
+
+      max-width: rem(500);
+      transition: opacity var(--transition-duration) ease;
+
+      &:not(.is-active) {
+        @include visually-hidden;
+        opacity: 0;
+      }
+    }
+  }
+}
