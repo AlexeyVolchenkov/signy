@@ -668,7 +668,29 @@
       </div>
     </section>
 
-    <section class="send-mail"></section>
+    <section class="send-mail" aria-labelledby="send-mail-title">
+      <div class="send-mail__inner container">
+        <h2 class="send-mail__title">Подпишись на наши новости!</h2>
+        <div class="send-mail__desctiption">
+          <p>Введи свой электронный адрес и будь в курсе всех обновлений</p>
+        </div>
+        <form class="send-mail__form" action="/" novalidate data-js-form>
+          <label class="send-mail__form-label visually-hidden" for="email">Email</label>
+          <div class="send-mail__form-wrapper">
+          <input
+            class="send-mail__form-wrapper-input"
+            id="email"
+            placeholder="example@email.com"
+            type="email"
+            required
+            data-js-form-input
+          />
+          <span class="send-mail__form-wrapper-input-error" data-js-form-fields-error></span>
+          </div>
+          <button type="submit" class="button">Отправить</button>
+        </form>
+      </div>
+    </section>
   </main>
 
   <footer class="footer">

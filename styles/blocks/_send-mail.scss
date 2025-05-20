@@ -1,0 +1,47 @@
+@use '../helpers/' as *;
+
+.send-mail {
+  &__inner {
+    padding-top: rem(56);
+    padding-bottom: fluid(90, 25);
+    padding-inline: 1rem;
+    flex-direction: column;
+    align-items: center;
+    row-gap: rem(30);
+
+    @include tablet {
+      padding-top: rem(40);
+    }
+  }
+
+  &__form {
+    display: flex;
+    column-gap: rem(10);
+    &-wrapper {
+      position: relative;
+
+      &-input {
+        padding-block: rem(10);
+        padding-inline: rem(25);
+        border: var(--border);
+        border-radius: rem(37);
+        
+        @include mobile {
+          padding-inline: rem(10);
+        }
+        
+        &.invalid ~ &-error {
+          --size: #{rem(18)};
+          
+          @include square(var(--size));
+
+          position: absolute;
+          top: 50%;
+          right: 5%;
+          translate: 0 -50%;
+          background: url('../../icons/input/error.svg') center/cover no-repeat;
+        }
+      }
+    }
+  }
+}
