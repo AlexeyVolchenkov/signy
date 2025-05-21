@@ -1,0 +1,56 @@
+@use '../helpers/' as *;
+
+.tabs {
+  &__buttons {
+    display: flex;
+    column-gap: rem(60);
+    padding-bottom: rem(24);
+  }
+
+  &__button {
+    position: relative;
+    background-color: transparent;
+    border: none;
+
+    &::after {
+      position: absolute;
+      content: '';
+      width: 0;
+      height: 1px;
+      bottom: 0;
+      left: 0;
+      background-color: var(--color-blue-light);
+      transition-duration: var(--transition-duration); 
+    }
+
+    @include hover {
+      &::after {
+        width: 100%;
+      }
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: fluid(64, 10);
+  }
+
+  &__pagination-controls {
+    padding-top: fluid(50, 35);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: rem(10);
+
+    &-prev-button,
+    &-next-button {
+      border: none;
+      background-color: transparent;
+
+      @include hover {
+        color: var(--color-blue-light);
+      }
+    }
+  }
+}

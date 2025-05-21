@@ -10,10 +10,6 @@ class FormsValidation {
     invalid: 'invalid',
   }
 
-  errorMessages = {
-    valueMissing: '123',
-  }
-
   constructor (rootElement) {
     this.rootElement = rootElement
     this.errorElement = this.rootElement.querySelector(this.selectors.error)

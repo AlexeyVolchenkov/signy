@@ -18,6 +18,17 @@
     color: var(--color-white);
   }
 
+  &--full-transparent {
+    border: none;
+    background-color: transparent;
+    color: var(--color-blue-dark);
+
+    @include hover {
+      color: var(--color-gray);
+      background-color: transparent;
+    }
+  }
+
   @include tablet {
     color: var(--color-white);
     background-color: var(--color-blue-light);

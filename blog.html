@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signy | Blog</title>
+  <link rel="icon" href="/icons/favicon.svg" type="image/x-icon">
+  <link rel="stylesheet" href="./styles/main.css">
+  <script src="./scripts/main.js" type="module"></script>
+</head>
+<body>
+  <header class="header" data-js-header>
+    <div class="header__inner container">
+      <a href="#" class="header__logo logo">
+        <img 
+        src="./icons/icon.svg" 
+        alt="" 
+        class="logo__image"
+        width="131" height="40" 
+      />
+      </a>
+
+      <div class="header__overlay" data-js-header-overlay>
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">0 800 750 643</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">Про нас</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">Цены</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__actions">
+          <button type="button" class="header__actions-login button button--transparent">Вход</button>
+          <button type="button" class="header__actions-registration button">Регистрация</button>
+          SELECTOR
+        </div>
+      </div>
+
+      <button 
+        type="button" 
+        class="header__burger burger-button visible-tablet"
+        title="Open menu"
+        aria-label="Open menu"
+        data-js-header-burger-button
+      >
+        <span class="burger-button__line"></span>
+        <span class="burger-button__line"></span>
+        <span class="burger-button__line"></span>
+      </button>
+      
+    </div>
+  </header>
+  
+  <main>
+    <section class="blog" aria-labelledby="blog-title">
+      <div class="blog__inner container">
+        <h1 class="blog__title" id="blog-title">Интересно пишем про</h1>
+        <div class="blog__main-card blog-card blog-card--big">
+          <img 
+            src="images/blog-card/laptop-with-glasses.jpg" 
+            alt="" 
+            class="blog-card__image"
+            width="731" height="422"
+          />
+          <div class="blog-card__body">
+            <time datetime="2020-05-28" class="blog-card__time">28.05.2020</time>
+            <h2 class="blog-card__title">Burn Calories Quicker in 30 Min.</h2>
+            <ul class="blog-card__list">
+              <li class="blog-card__item">
+                <div class="blog-card__tag">про продукт</div>
+              </li>
+              <li class="blog-card__item">
+                <div class="blog-card__tag">теги</div>
+              </li>
+              <li class="blog-card__item">
+                <div class="blog-card__tag">много тегов</div>
+              </li>
+            </ul>
+            <div class="blog-card__description">
+              <p>Идейные соображения высшего порядка, а также укрепление и развитие структуры играет важную роль в формировании существенных финансовых и административных условий. Не следует, однако забывать, что дальнейшее развитие различных форм деятельности способствует подготовки и реализации форм развития.</p>
+            </div>
+            <a href="#" class="blog-card__link">Читать</a>
+          </div>
+        </div>
+
+        <div class="blog__tabs tabs" data-js-tabs>
+          <header class="tabs__header">
+            <div 
+              class="tabs__buttons"
+              role="tablist"
+            >
+              <button 
+                class="tabs__button"
+                type="button"
+                id="tab-1"
+                role="tab"
+                aria-controls="tabpanel-1"
+                data-js-tabs-button
+                aria-selected="true"
+              >
+                Все
+              </button>
+              <button 
+                class="tabs__button"
+                type="button"
+                id="tab-2"
+                role="tab"
+                aria-controls="tabpanel-2"
+                data-js-tabs-button
+                aria-selected="false"
+                tabindex="-1"
+              >
+                Новости
+              </button>
+              <button 
+                class="tabs__button"
+                type="button"
+                id="tab-3"
+                role="tab"
+                aria-controls="tabpanel-3"
+                data-js-tabs-button
+                aria-selected="false"
+                tabindex="-1"
+              >
+                Обучение
+              </button>
+              <button 
+                class="tabs__button"
+                type="button"
+                id="tab-4"
+                role="tab"
+                aria-controls="tabpanel-4"
+                data-js-tabs-button
+                aria-selected="false"
+                tabindex="-1"
+              >
+                Законы
+              </button>
+            </div>
+          </header>
+          <div class="tabs__body">
+            <div 
+              class="tabs__content"
+              id="tabpanel-1"
+              aria-labelledby="tab-1"
+              data-js-tabs-content
+              tabindex="0"
+            >
+            <ul class="tabs__list">
+              <li class="tabs__item">
+                <div class="blog-card">
+                  <img 
+                    src="images/blog-card/headsets-on-table.jpg" 
+                    alt="" 
+                    class="blog-card__image"
+                    width="370" height="371"
+                  />
+                  <div class="blog-card__body">
+                    <time datetime="2020-03-05" class="blog-card__time">05.03.2020</time>
+                    <h2 class="blog-card__title">Burn Calories Quicker in 30 Min.</h2>
+                    <ul class="blog-card__list">
+                      <li class="blog-card__item">
+                        <div class="blog-card__tag">про продукт</div>
+                      </li>
+                      <li class="blog-card__item">
+                        <div class="blog-card__tag">теги</div>
+                      </li>
+                    </ul>
+                    <div class="blog-card__description">
+                      <p>Не следует, однако забывать, что дальнейшее развитие различных форм деятельности</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="tabs__item">
+                <div class="blog-card">
+                  <img 
+                    src="images/blog-card/headsets-on-table.jpg" 
+                    alt="" 
+                    class="blog-card__image"
+                    width="370" height="371"
+                  />
+                  <div class="blog-card__body">
+                    <time datetime="2020-03-05" class="blog-card__time">05.03.2020</time>
+                    <h2 class="blog-card__title">Burn Calories Quicker in 30 Min.</h2>
+                    <ul class="blog-card__list">
+                      <li class="blog-card__item">
+                        <div class="blog-card__tag">про продукт</div>
+                      </li>
+                      <li class="blog-card__item">
+                        <div class="blog-card__tag">теги</div>
+                      </li>
+                    </ul>
+                    <div class="blog-card__description">
+                      <p>Не следует, однако забывать, что дальнейшее развитие различных форм деятельности</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="tabs__item">
+                <div class="blog-card">
+                  <img 
+                    src="images/blog-card/headsets-on-table.jpg" 
+                    alt="" 
+                    class="blog-card__image"
+                    width="370" height="371"
+                  />
+                  <div class="blog-card__body">
+                    <time datetime="2020-03-05" class="blog-card__time">05.03.2020</time>
+                    <h2 class="blog-card__title">Burn Calories Quicker in 30 Min.</h2>
+                    <ul class="blog-card__list">
+                      <li class="blog-card__item">
+                        <div class="blog-card__tag">про продукт</div>
+                      </li>
+                      <li class="blog-card__item">
+                        <div class="blog-card__tag">теги</div>
+                      </li>
+                    </ul>
+                    <div class="blog-card__description">
+                      <p>Не следует, однако забывать, что дальнейшее развитие различных форм деятельности</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="tabs__item">
+                <div class="blog-card">
+                  <img 
+                    src="images/blog-card/headsets-on-table.jpg" 
+                    alt="" 
+                    class="blog-card__image"
+                    width="370" height="371"
+                  />
+                  <div class="blog-card__body">
+                    <time datetime="2020-03-05" class="blog-card__time">05.03.2020</time>
+                    <h2 class="blog-card__title">Burn Calories Quicker in 30 Min.</h2>
+                    <ul class="blog-card__list">
+                      <li class="blog-card__item">
+                        <div class="blog-card__tag">про продукт</div>
+                      </li>
+                      <li class="blog-card__item">
+                        <div class="blog-card__tag">теги</div>
+                      </li>
+                    </ul>
+                    <div class="blog-card__description">
+                      <p>Не следует, однако забывать, что дальнейшее развитие различных форм деятельности</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="tabs__item">
+                <div class="blog-card">
+                  <img 
+                    src="images/blog-card/headsets-on-table.jpg" 
+                    alt="" 
+                    class="blog-card__image"
+                    width="370" height="371"
+                  />
+                  <div class="blog-card__body">
+                    <time datetime="2020-03-05" class="blog-card__time">05.03.2020</time>
+                    <h2 class="blog-card__title">Burn Calories Quicker in 30 Min.</h2>
+                    <ul class="blog-card__list">
+                      <li class="blog-card__item">
+                        <div class="blog-card__tag">про продукт</div>
+                      </li>
+                      <li class="blog-card__item">
+                        <div class="blog-card__tag">теги</div>
+                      </li>
+                    </ul>
+                    <div class="blog-card__description">
+                      <p>Не следует, однако забывать, что дальнейшее развитие различных форм деятельности</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="tabs__item">
+                <div class="blog-card">
+                  <img 
+                    src="images/blog-card/headsets-on-table.jpg" 
+                    alt="" 
+                    class="blog-card__image"
+                    width="370" height="371"
+                  />
+                  <div class="blog-card__body">
+                    <time datetime="2020-03-05" class="blog-card__time">05.03.2020</time>
+                    <h2 class="blog-card__title">Burn Calories Quicker in 30 Min.</h2>
+                    <ul class="blog-card__list">
+                      <li class="blog-card__item">
+                        <div class="blog-card__tag">про продукт</div>
+                      </li>
+                      <li class="blog-card__item">
+                        <div class="blog-card__tag">теги</div>
+                      </li>
+                    </ul>
+                    <div class="blog-card__description">
+                      <p>Не следует, однако забывать, что дальнейшее развитие различных форм деятельности</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="tabs__item">
+                <div class="blog-card">
+                  <img 
+                    src="images/blog-card/headsets-on-table.jpg" 
+                    alt="" 
+                    class="blog-card__image"
+                    width="370" height="371"
+                  />
+                  <div class="blog-card__body">
+                    <time datetime="2020-03-05" class="blog-card__time">05.03.2020</time>
+                    <h2 class="blog-card__title">Burn Calories Quicker in 30 Min.</h2>
+                    <ul class="blog-card__list">
+                      <li class="blog-card__item">
+                        <div class="blog-card__tag">про продукт</div>
+                      </li>
+                      <li class="blog-card__item">
+                        <div class="blog-card__tag">теги</div>
+                      </li>
+                    </ul>
+                    <div class="blog-card__description">
+                      <p>Не следует, однако забывать, что дальнейшее развитие различных форм деятельности</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="tabs__item">
+                <div class="blog-card">
+                  <img 
+                    src="images/blog-card/headsets-on-table.jpg" 
+                    alt="" 
+                    class="blog-card__image"
+                    width="370" height="371"
+                  />
+                  <div class="blog-card__body">
+                    <time datetime="2020-03-05" class="blog-card__time">05.03.2020</time>
+                    <h2 class="blog-card__title">Burn Calories Quicker in 30 Min.</h2>
+                    <ul class="blog-card__list">
+                      <li class="blog-card__item">
+                        <div class="blog-card__tag">про продукт</div>
+                      </li>
+                      <li class="blog-card__item">
+                        <div class="blog-card__tag">теги</div>
+                      </li>
+                    </ul>
+                    <div class="blog-card__description">
+                      <p>Не следует, однако забывать, что дальнейшее развитие различных форм деятельности</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="tabs__item">
+                <div class="blog-card">
+                  <img 
+                    src="images/blog-card/headsets-on-table.jpg" 
+                    alt="" 
+                    class="blog-card__image"
+                    width="370" height="371"
+                  />
+                  <div class="blog-card__body">
+                    <time datetime="2020-03-05" class="blog-card__time">05.03.2020</time>
+                    <h2 class="blog-card__title">Burn Calories Quicker in 30 Min.</h2>
+                    <ul class="blog-card__list">
+                      <li class="blog-card__item">
+                        <div class="blog-card__tag">про продукт</div>
+                      </li>
+                      <li class="blog-card__item">
+                        <div class="blog-card__tag">теги</div>
+                      </li>
+                    </ul>
+                    <div class="blog-card__description">
+                      <p>Не следует, однако забывать, что дальнейшее развитие различных форм деятельности</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <div class="tabs__pagination-controls">
+              <button class="tabs__pagination-controls-prev-button">Назад</button>
+              <div class="tabs__pagination-controls-numbers">1 2 3 4</div>
+              <button class="tabs__pagination-controls-next-button">Дальше</button>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="send-mail" aria-labelledby="send-mail-title">
+      <div class="send-mail__inner container">
+        <h2 class="send-mail__title">Подпишись на наши новости!</h2>
+        <div class="send-mail__desctiption">
+          <p>Введи свой электронный адрес и будь в курсе всех обновлений</p>
+        </div>
+        <form class="send-mail__form" action="/" novalidate data-js-form>
+          <label class="send-mail__form-label visually-hidden" for="email">Email</label>
+          <div class="send-mail__form-wrapper">
+          <input
+            class="send-mail__form-wrapper-input"
+            id="email"
+            placeholder="example@email.com"
+            type="email"
+            required
+            data-js-form-input
+          />
+          <span class="send-mail__form-wrapper-input-error" data-js-form-fields-error></span>
+          </div>
+          <button type="submit" class="button">Отправить</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="details" aria-labelledby="details-title">
+      <div class="details__inner container expandable-content" data-js-expandable-content>
+        <h2 class="details__title">
+          SEO текст
+        </h2>
+        <p>Разнообразный и богатый опыт дальнейшее развитие различных форм деятельности требуют от нас анализа существенных финансовых и административных условий. Задача организации, в особенности же укрепление и развитие структуры позволяет оценить значение новых предложений. С другой стороны постоянный количественный рост и сфера нашей активности требуют от нас анализа позиций, занимаемых участниками в отношении поставленных задач. Задача организации, в особенности же дальнейшее развитие различных форм деятельности позволяет выполнять важные задания по разработке соответствующий условий активизации. Разнообразный и богатый опыт начало повседневной работы по формированию позиции обеспечивает широкому кругу (специалистов) участие в формировании новых предложений. Задача организации, в особенности же укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании существенных финансовых и административных условий.</p>
+        <p>Повседневная практика показывает, что реализация намеченных плановых заданий позволяет выполнять важные задания по разработке системы обучения кадров, соответствует насущным потребностям. Равным образом сложившаяся структура организации позволяет</p>
+        <h2 class="details__title">
+          Повседневная практика показывает
+        </h2>
+        <p>Разнообразный и богатый опыт рамки и место обучения кадров представляет собой интересный эксперимент проверки форм развития. Повседневная практика показывает, что постоянное информационно-пропагандистское обеспечение нашей деятельности обеспечивает широкому кругу (специалистов) участие в формировании дальнейших направлений развития. Не следует, однако забывать, что укрепление и развитие структуры позволяет оценить значение направлений прогрессивного развития. С другой стороны консультация с широким активом влечет за собой процесс внедрения и модернизации позиций, занимаемых участниками в отношении поставленных задач. Значимость этих проблем настолько очевидна, что постоянный количественный рост и сфера нашей активности в значительной степени обуславливает создание новых предложений.</p>
+        <h2 class="details__title">
+          Реализация намеченных плановых
+        </h2>
+        <p>Равным образом сложившаяся структура организации требуют определения и уточнения системы обучения кадров, соответствует насущным потребностям. Товарищи! консультация с широким активом влечет за собой процесс внедрения и модернизации направлений прогрессивного развития. Идейные соображения высшего порядка, а также постоянный количественный рост и сфера нашей активности позволяет выполнять важные задания по разработке соответствующий условий активизации.</p>
+        <p>Значимость этих проблем настолько очевидна, что новая модель организационной деятельности способствует подготовки и реализации новых предложений. Товарищи! консультация с широким активом влечет за собой процесс внедрения и модернизации модели развития. С другой стороны рамки и место обучения кадров играет важную роль в формировании систем массового участия. Товарищи! новая модель организационной деятельности влечет за собой процесс внедрения и модернизации модели развития.</p>
+        <p>С другой стороны постоянный количественный рост и сфера нашей активности позволяет выполнять важные задания по разработке форм развития. Значимость этих проблем настолько очевидна, что постоянный количественный рост и сфера нашей активности в значительной степени обуславливает создание соответствующий условий активизации. Равным образом реализация намеченных плановых заданий играет важную роль в формировании форм развития.</p>
+        <button 
+          class="details__read-full button button--full-transparent expandable-content__button" 
+          type="button"
+          data-js-expandable-content-button  
+        >Развернуть</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__body">
+        <a href="#" class="footer__logo">
+          <img 
+            src="./icons/logo_white.svg" 
+            alt=""
+            width="131" height="40" loading="lazy"
+          />
+        </a>
+        <ul class="footer__list grid grid--cols-2">
+          <div class="grid__column">
+            <li class="footer__item">
+            <a href="#" class="footer__link">Про нас</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Цены</a>
+          </li>
+          </div>
+          <div class="grid__column">
+            <li class="footer__item">
+            <a href="#" class="footer__link">Блог</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Контакты</a>
+          </li>
+          </div>
+          <div class="grid__column">
+            <li class="footer__item">
+            <a href="#" class="footer__link">Вход</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Регистрация</a>
+          </li>
+          </div>
+        </ul>
+        <div class="footer__soc1als">
+          <ul class="footer__soc1als-list">
+            <li class="footer__soc1als-item">
+              <a 
+                href="mailto:infosmartsign@smarttender.biz" 
+                class="footer__socials-mail"
+                aria-label="Email"
+                title="Email"
+              >
+                infosmartsign@smarttender.biz
+              </a>
+            </li>
+            <li class="footer__soc1als-item">
+              <a 
+                href="#" 
+                class="footer__socials-facebook"
+                aria-label="Facebook"
+                title="Facebook"
+              >
+                Facebook
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__contacts">
+          <address class="footer__contacts-address">
+            пр-т Миколи Бажана, 14 А 
+            Київ, 02072
+          </address>
+          <a href="tel:+0800750643" class="footer__contacts-number">0 800 750643</a>
+          <a href="tel:+380443345643" class="footer__contacts-number">+380 44 334 56 43</a>
+          <a href="tel:+380443388643" class="footer__contacts-number">+380 44 338 86 43</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__extra">
+
+    </div>
+    
+  </footer>
+</body>
+</html>

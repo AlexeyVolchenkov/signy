@@ -1,0 +1,23 @@
+@use '../helpers/' as *;
+
+.blog {
+  &__inner {
+    padding-top: rem(24);
+    padding-bottom: rem(48);
+    flex-direction: column;
+
+    @include mobile {
+      padding-top: rem(10);
+    }
+  }
+
+  &__main-card {
+    display: flex;
+    column-gap: rem(43);
+    padding-bottom: rem(24);
+  }
+
+  &__title {
+    padding-bottom: rem(24);
+  }
+}

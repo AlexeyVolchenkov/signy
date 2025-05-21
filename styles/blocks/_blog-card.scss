@@ -1,0 +1,90 @@
+@use '../helpers/' as *;
+
+.blog-card {
+  &__body {
+    display: grid;
+    row-gap: rem(7);
+    justify-items: left;
+    align-items: center;
+    max-width: rem(360);
+  }
+
+  &__image {
+    padding-bottom: rem(10);
+  }
+
+  &__time {
+    font-size: rem(14);
+    font-weight: 500;
+  }
+
+  &__title {
+    @include fluid-text(24, 16);
+
+    font-weight: 600;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: rem(14);
+  }
+
+  &__tag {
+    padding-inline: rem(14);
+    background-color: var(--color-gray-light);
+    border-radius: rem(23);
+  }
+
+  &__description {
+    font-size: rem(18);
+
+    @include tablet {
+      font-size: rem(16);
+    }
+  }
+
+  &__link {
+    font-weight: 600;
+    letter-spacing: 0.145rem;
+
+    &::after {
+      position: absolute;
+      content: '';
+      width: 0;
+      height: 1px;
+      bottom: 0;
+      left: 0;
+      background-color: var(--color-blue-light);
+      transition-duration: var(--transition-duration); 
+    }
+
+    @include hover {
+      &::after {
+        width: 100%;
+      }
+    }
+  }
+
+  &--big {
+    .blog-card {
+      &__image {
+        padding-bottom: 0;
+      }
+
+      &__body {
+        row-gap: rem(15);
+        max-width: rem(460);
+      }
+
+      &__title {
+        font-size: rem(40);
+        font-weight: 600;
+
+        @include tablet {
+          font-size: rem(20);
+        }
+      }
+    }
+  }
+}

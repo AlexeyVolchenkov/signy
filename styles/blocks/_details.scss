@@ -1,0 +1,17 @@
+@use '../helpers/' as *;
+
+.details {
+  &__inner {
+    padding-block: rem(25);
+    flex-direction: column;
+  }
+
+  &__title {
+    padding-bottom: rem(12);
+  }
+
+  &__read-full {
+    align-self: center;
+    max-width: rem(124);
+  }
+}
