@@ -1351,6 +1351,32 @@ button[aria-label]::before {
     color: var(--color-blue-light);
   }
 }
+.tabs__pagination-controls-prev-button.not-active, .tabs__pagination-controls-next-button.not-active {
+  pointer-events: none;
+  opacity: 0.5;
+}
+.tabs__pagination-controls-list {
+  display: flex;
+}
+.tabs__pagination-controls-item {
+  cursor: pointer;
+  transition-duration: var(transition-duration);
+  padding: 0.625rem 0.4375rem;
+}
+@media (any-hover: hover) {
+  .tabs__pagination-controls-item:hover {
+    color: var(--color-blue-light);
+  }
+}
+@media (any-hover: none) {
+  .tabs__pagination-controls-item:active {
+    color: var(--color-blue-light);
+  }
+}
+.tabs__pagination-controls-item.is-active {
+  color: var(--color-blue-light);
+  pointer-events: none;
+}
 
 .details__inner {
   padding-block: 1.5625rem;

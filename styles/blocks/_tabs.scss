@@ -51,6 +51,30 @@
       @include hover {
         color: var(--color-blue-light);
       }
+
+      &.not-active {
+        pointer-events: none;
+        opacity: 0.5;
+      }
+    }
+
+    &-list {
+      display: flex;
+    }
+
+    &-item {
+      cursor: pointer;
+      transition-duration: var(transition-duration);
+      padding: rem(10) rem(7);
+
+      @include hover {
+        color: var(--color-blue-light);
+      }
+
+      &.is-active {
+        color: var(--color-blue-light);
+        pointer-events: none;
+      }
     }
   }
 }
