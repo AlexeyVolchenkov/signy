@@ -1,0 +1,10 @@
+@use '../helpers/' as *;
+
+.connection-form {
+  display: grid;
+    row-gap: rem(12);
+
+    &-button {
+      justify-self: start;
+    }
+}

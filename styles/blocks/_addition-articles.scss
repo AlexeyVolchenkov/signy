@@ -1,0 +1,36 @@
+@use '../helpers/' as *;
+
+.addition-articles {
+  &__inner {
+    flex-direction: column;
+    padding-bottom: rem(40);
+  }
+
+  &__title {
+    @include fluid-text(40, 20);
+
+    padding-bottom: fluid(48, 32);
+    text-align: center;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    column-gap: rem(61);
+    width: 100%;
+  }
+
+  &__item {
+    @include tablet {
+      &:nth-last-child(1) {
+        display: none;
+      }
+    }
+
+    @include mobile {
+      &:nth-last-child(2) {
+        display: none;
+      }
+    }
+  }
+}

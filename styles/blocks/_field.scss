@@ -1,0 +1,26 @@
+@use '../helpers/' as *;
+
+.field {
+  display: flex;
+  flex-direction: column;
+  row-gap: rem(6);
+  align-items: start;
+
+  &__control {
+    border: var(--border);
+    border-color: var(--color-black);
+    border-radius: rem(35);
+    padding: rem(17) rem(21);
+    
+    max-width: rem(420);
+    width: 100%;
+
+    &--text-area {
+      border-radius: rem(8);
+    }
+
+    @include mobile {
+      padding-block: rem(13);
+    }
+  }
+}

@@ -1,0 +1,30 @@
+@use '../helpers/' as *;
+
+.connection {
+  &--blue-background {
+    background-color: var(--color-gray-blue);
+  }
+
+  &__inner {
+    padding-bottom: fluid(24, 12);
+    flex-direction: column;
+
+    &--center {
+      align-items: center
+    }
+  }
+
+  &__title {
+    padding-top: rem(34);
+    @include fluid-text(40, 20);
+
+    padding-bottom: fluid(24, 12);
+  }
+
+  &__subtitle {
+    @include fluid-text(18, 14);
+
+    padding-bottom: fluid(24, 12);
+  }
+  
+}

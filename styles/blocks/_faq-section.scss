@@ -1,0 +1,9 @@
+@use '../helpers/' as *;
+
+.faq-section {
+  &__inner {
+    justify-content: center;
+    padding-block: fluid(34, 14);
+    padding-inline: 2rem;
+  }
+}

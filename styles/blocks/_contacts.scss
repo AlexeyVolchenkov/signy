@@ -1,0 +1,75 @@
+@use '../helpers/' as *;
+
+.contacts {
+  &__inner {
+    padding-block: fluid(48, 20);
+    flex-direction: column;
+  }
+
+  &__title {
+    padding-bottom: fluid(27, 9);
+  }
+
+  &__body {
+    --columns: 2;
+    display: grid;
+    grid-template-columns: repeat(var(--columns), 50%);
+    row-gap: rem(24);
+
+    @include tablet {
+      --columns: 1;
+      grid-template-columns: 100%;
+    }
+  }
+
+  &__information {
+    max-width: rem(493);
+  }
+
+  &__description {
+    padding-bottom: fluid(20, 10);
+  }
+
+  &__numbers-list,
+  &__mail,
+  &__address {
+    --size: 24px;
+    padding-left: calc(var(--size) + 10px);
+    position: relative;
+
+    &::before {
+      position: absolute;
+      inset: 0;
+      display: inline-block;
+
+      @include square(var(--size));
+
+      content: '';
+    }
+  }
+
+  &__numbers {
+    &-list {
+      padding-bottom: rem(10);
+      display: flex;
+      flex-direction: column;
+      row-gap: rem(10);
+
+      &::before {
+        background: url('/images/contacts/phone.svg') center/cover no-repeat;
+      }
+    }
+  }
+
+  &__mail {
+    &::before {
+      background: url('/images/contacts/mail.svg') center/cover no-repeat;
+    }
+  }
+
+  &__address {
+    &::before {
+      background: url('/images/contacts/mark.svg') center/cover no-repeat;
+    }
+  }
+}

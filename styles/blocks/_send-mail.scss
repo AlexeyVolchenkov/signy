@@ -1,6 +1,8 @@
 @use '../helpers/' as *;
 
 .send-mail {
+  background-color: var(--color-gray-light);
+
   &__inner {
     padding-top: rem(56);
     padding-bottom: fluid(90, 25);

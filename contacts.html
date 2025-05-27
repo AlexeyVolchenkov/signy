@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signy | Contacts</title>
+  <link rel="icon" href="/icons/favicon.svg" type="image/x-icon">
+  <link rel="stylesheet" href="./styles/main.css">
+  <script src="./scripts/main.js" type="module"></script>
+</head>
+<body>
+  <header class="header" data-js-header>
+    <div class="header__inner container">
+      <a href="#" class="header__logo logo">
+        <img 
+        src="./icons/icon.svg" 
+        alt="" 
+        class="logo__image"
+        width="131" height="40" 
+      />
+      </a>
+
+      <div class="header__overlay" data-js-header-overlay>
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">0 800 750 643</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">Про нас</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">Цены</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__actions">
+          <button type="button" class="header__actions-login button button--transparent">Вход</button>
+          <button type="button" class="header__actions-registration button">Регистрация</button>
+          SELECTOR
+        </div>
+      </div>
+
+      <button 
+        type="button" 
+        class="header__burger burger-button visible-tablet"
+        title="Open menu"
+        aria-label="Open menu"
+        data-js-header-burger-button
+      >
+        <span class="burger-button__line"></span>
+        <span class="burger-button__line"></span>
+        <span class="burger-button__line"></span>
+      </button>
+      
+    </div>
+  </header>
+  
+  <main>
+    <section class="contacts" aria-labelledby="contacts-title">
+      <div class="contacts__inner container">
+        <h1 class="contacts__title" id="contacts-title">Наши контакты</h1>
+        <div class="contacts__body">
+          <div class="contacts__information">
+            <div class="contacts__description">
+              <p>Мы всегда рады ответить на ваши вопросы и развивать эффективное сотрудничество по всем вопросам, связанным с электронным документооборотом.</p>
+            </div>
+            <ul class="contacts__numbers-list">
+              <li class="contacts__numbers-item">
+                <a href="tel:0800750643" class="contacts__number">0 800 750 643</a>
+              </li>
+              <li class="contacts__numbers-item">
+                <a href="tel:30443345643" class="contacts__number">+3 044 334 56 43</a>
+              </li>
+              <li class="contacts__numbers-item">
+                <a href="tel:30443345643" class="contacts__number">+3 044 334 56 43</a>
+              </li>
+            </ul>
+            <a href="mailto:infosmartsign@smarttender.biz" class="contacts__mail">infosmartsign@smarttender.biz</a>
+            <address class="contacts__address">пр-т Бажана, 14 А Киев, 02072</address>
+          </div>
+          <div class="contacts__map">
+            <img 
+              src="images/contacts/map.jpg" 
+              alt="Карта"
+              class="contacts__map-image"
+              width="605" height="240"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="connection" aria-labelledby="connection-title">
+      <div class="connection__inner container">
+        <h2 class="connection__title" id="connection-title">...или напишите нам:</h2>
+        <form class="connection-form" action="/">
+          <div class="connection-form__cell field">
+            <label for="firstName" class="field__label">Имя<span>*</span>:</label>
+            <input 
+              class="field__control"
+              id="firstName"
+              placeholder="Иван"
+              required
+            />
+          </div>
+          <div class="connection-form__cell field">
+            <label for="email" class="field__label">Электронная почта<span>*</span>:</label>
+            <input 
+              class="field__control"
+              id="email"
+              placeholder="ivan@mail.com"
+              required
+              type="email"
+            />
+          </div>
+          <div class="connection-form__cell field">
+            <label for="number" class="field__label">Телефон<span>*</span>:</label>
+            <input 
+              class="field__control"
+              id="number"
+              placeholder="+38 000 000 00 00"
+              required
+              type="number"
+            />
+          </div>
+          <div class="connection-form__cell field">
+            <label for="message" class="field__label">Сообщение<span>*</span>:</label>
+            <textarea 
+              class="field__control field__control--text-area"
+              id="message"
+              placeholder="введите тут"
+            ></textarea>
+          </div>
+          <button class="connection-form-button button">Отправить</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__body">
+        <a href="#" class="footer__logo">
+          <img 
+            src="./icons/logo_white.svg" 
+            alt=""
+            width="131" height="40" loading="lazy"
+          />
+        </a>
+        <ul class="footer__list grid grid--cols-2">
+          <div class="grid__column">
+            <li class="footer__item">
+            <a href="#" class="footer__link">Про нас</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Цены</a>
+          </li>
+          </div>
+          <div class="grid__column">
+            <li class="footer__item">
+            <a href="#" class="footer__link">Блог</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Контакты</a>
+          </li>
+          </div>
+          <div class="grid__column">
+            <li class="footer__item">
+            <a href="#" class="footer__link">Вход</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Регистрация</a>
+          </li>
+          </div>
+        </ul>
+        <div class="footer__soc1als">
+          <ul class="footer__soc1als-list">
+            <li class="footer__soc1als-item">
+              <a 
+                href="mailto:infosmartsign@smarttender.biz" 
+                class="footer__socials-mail"
+                aria-label="Email"
+                title="Email"
+              >
+                infosmartsign@smarttender.biz
+              </a>
+            </li>
+            <li class="footer__soc1als-item">
+              <a 
+                href="#" 
+                class="footer__socials-facebook"
+                aria-label="Facebook"
+                title="Facebook"
+              >
+                Facebook
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__contacts">
+          <address class="footer__contacts-address">
+            пр-т Миколи Бажана, 14 А 
+            Київ, 02072
+          </address>
+          <a href="tel:+0800750643" class="footer__contacts-number">0 800 750643</a>
+          <a href="tel:+380443345643" class="footer__contacts-number">+380 44 334 56 43</a>
+          <a href="tel:+380443388643" class="footer__contacts-number">+380 44 338 86 43</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__extra">
+
+    </div>
+    
+  </footer>
+</body>
+</html>
