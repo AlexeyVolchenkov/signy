@@ -1,0 +1,52 @@
+@use '../helpers/' as *;
+
+.about-us {
+  &__inner {
+    flex-direction: column;
+    row-gap: fluid(24, 16);
+  }
+
+  &__title {
+    padding-top: rem(20);
+    padding-bottom: rem(10);
+  }
+
+  &__image {
+    align-self: center;
+    padding-bottom: rem(29);
+  }
+
+  &__middle-block {
+    display: flex;
+    column-gap: rem(118);
+    max-width: rem(1067);
+    align-self: center;
+    row-gap: rem(30);
+    
+    @include tablet {
+      column-gap: rem(20);
+    }
+
+    @include mobile {
+      flex-direction: column;
+    }
+  }
+
+  &__cite {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: rem(30);
+
+    @include mobile {
+      max-width: rem(380);
+      
+      row-gap: rem(10);
+      align-self: center;
+    }
+  }
+
+  &__author {
+    text-align: right;
+  }
+}
