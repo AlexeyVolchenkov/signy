@@ -63,7 +63,7 @@ class Pagination {
       const varExist = element.style.getPropertyValue('--bgImage') !== ''
       
       if (varExist) {
-        element.style.setProperty('--bgImage', `url(../../images/hero/${activePaginationIndex + 1}.png)`)
+        element.style.setProperty('--bgImage', `url(../images/hero/${activePaginationIndex + 1}.png)`)
       } else {
         element.classList.toggle(this.stateClasses.isActive, isActive)
       }
