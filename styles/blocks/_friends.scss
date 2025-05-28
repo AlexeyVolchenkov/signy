@@ -11,7 +11,6 @@
 
   &__body {
     width: 100%;
-    display: flex;
     overflow: hidden;
   }
 
@@ -19,11 +18,10 @@
     min-width: 100%;
     justify-items: center;
     align-items: center;
-    transition-duration: 0.5s;
+    transition-duration: var(--transition-duration);
 
     &:not(.is-active) {
-      display: none;
-
+      height: 0;
       opacity: 0;
     }
 

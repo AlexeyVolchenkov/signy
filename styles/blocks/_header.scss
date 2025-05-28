@@ -1,7 +1,34 @@
 @use '../helpers/' as *;
 
 .header {
-  background-color: #DEEEFC;
+
+  &__wrapper {
+    &-blue {
+      background-color: var(--color-gray-blue);
+    }
+
+    &-bg {
+      position: relative;
+      max-width: var(--container-width);
+      margin-inline: auto;
+      
+      background-color: var(--color-gray-blue);
+
+      &::before {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 100%;
+        background: var(--bgImage)
+        center/cover
+        no-repeat;
+        max-width: rem(1300);
+        max-height: auto;
+      }
+    }
+
+  }
+
   &__inner {
     position: relative;
     z-index: 300;
@@ -77,19 +104,24 @@
 
   &__overlay {
     display: flex;
+    z-index: 10;
     align-items: center;
     column-gap: rem(32);
+    overflow-y: auto;
 
     @include tablet {
       row-gap: rem(30);
       position: fixed;
-      inset: 0;
+      right: 0;
+      top: 0;
+      height: 100%;
+      width: rem(450);
+      max-width: 100%;
       display: flex;
       flex-direction: column;
       justify-content: center;
       background-color: var(--color-blue-dark);
       transition-duration: var(--transition-duration);
-      z-index: 100;
       &:not(.is-active) {
         @include hide;
 

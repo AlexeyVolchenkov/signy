@@ -9,193 +9,168 @@
   <script src="./scripts/main.js" type="module"></script>
 </head>
 <body>
-  <header class="header" data-js-header>
-    <div class="header__inner container">
-      <a href="#" class="header__logo logo">
-        <img 
-        src="./icons/icon.svg" 
-        alt="" 
-        class="logo__image"
-        width="131" height="40" 
-      />
-      </a>
+  <header class="header" data-js-header data-js-pagination>
+    <div class="header__wrapper-blue">
+      <div class="header__wrapper-bg" style="--bgImage: url('../../images/hero/1.png')" data-js-pagination-content-image>
+        <div class="header__inner container">
+          <a href="#" class="header__logo logo">
+            <img 
+            src="./icons/icon.svg" 
+            alt="" 
+            class="logo__image"
+            width="131" height="40" 
+          />
+          </a>
+          
+          <div class="header__overlay" data-js-header-overlay>
+            <nav class="header__nav">
+              <ul class="header__nav-list">
+                <li class="header__nav-item">
+                  <a href="#" class="header__nav-link">1</a>
+                </li>
+                <li class="header__nav-item">
+                  <a href="#" class="header__nav-link">0 800 750 643</a>
+                </li>
+                <li class="header__nav-item">
+                  <a href="#" class="header__nav-link">Про нас</a>
+                </li>
+                <li class="header__nav-item">
+                  <a href="#" class="header__nav-link">Цены</a>
+                </li>
+                <li class="header__nav-item">
+                  <a href="#" class="header__nav-link">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="header__actions">
+              <button type="button" class="header__actions-login button button--transparent">Вход</button>
+              <button type="button" class="header__actions-registration button">Регистрация</button>
+              SELECTOR
+            </div>
+          </div>
 
-      <div class="header__overlay" data-js-header-overlay>
-        <nav class="header__nav">
-          <ul class="header__nav-list">
-            <li class="header__nav-item">
-              <a href="#" class="header__nav-link">0 800 750 643</a>
-            </li>
-            <li class="header__nav-item">
-              <a href="#" class="header__nav-link">Про нас</a>
-            </li>
-            <li class="header__nav-item">
-              <a href="#" class="header__nav-link">Цены</a>
-            </li>
-            <li class="header__nav-item">
-              <a href="#" class="header__nav-link">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="header__actions">
-          <button type="button" class="header__actions-login button button--transparent">Вход</button>
-          <button type="button" class="header__actions-registration button">Регистрация</button>
-          SELECTOR
+          <button 
+            type="button" 
+            class="header__burger burger-button visible-tablet"
+            title="Open menu"
+            aria-label="Open menu"
+            data-js-header-burger-button
+          >
+            <span class="burger-button__line"></span>
+            <span class="burger-button__line"></span>
+            <span class="burger-button__line"></span>
+          </button>
+          
         </div>
-      </div>
 
-      <button 
-        type="button" 
-        class="header__burger burger-button visible-tablet"
-        title="Open menu"
-        aria-label="Open menu"
-        data-js-header-burger-button
-      >
-        <span class="burger-button__line"></span>
-        <span class="burger-button__line"></span>
-        <span class="burger-button__line"></span>
-      </button>
-      
+        <section class="hero">
+          <div class="hero__inner container">
+            <div class="hero__body">
+              <h1 class="hero__title">Цифровой документооборот в три этапа:</h1>
+              <div class="hero__pagination pagination">
+                <ul class="pagination__list">
+                  <li class="pagination__item">
+                    <button 
+                      class="pagination__button is-active"
+                      type="button"
+                      id="pagination-number-1"
+                      aria-controls="pagination-image-1"
+                      aria-current="true"
+                      data-js-pagination-button
+                    >
+                      1
+                    </button>
+                    <span aria-hidden="true" class="pagination__separator"></span>
+                  </li>
+                  <li class="pagination__item">
+                    <button 
+                      class="pagination__button"
+                      type="button"
+                      id="pagination-number-2"
+                      aria-controls="pagination-image-2"
+                      data-js-pagination-button
+                    >
+                      2
+                    </button>
+                    <span aria-hidden="true" class="pagination__separator"></span>
+                  </li>
+                  <li class="pagination__item">
+                    <button 
+                      class="pagination__button"
+                      type="button"
+                      id="pagination-number-3"
+                      aria-controls="pagination-image-3"
+                      data-js-pagination-button
+                    >
+                      3
+                    </button>
+                  </li>
+                </ul>
+              </div>
+              <h2 class="hero__subtitle is-active" data-js-pagination-content-subtitle>Быстрая регистрация</h2>
+              <div class="hero__description is-active" data-js-pagination-content-description>
+                <p>Мы создали, возможно, самую простую регистрацию. Регистрируйся, получай полный доступ к сервису и 1000 подписей документов в подарок!</p>
+              </div>
+              <h2 class="hero__subtitle" data-js-pagination-content-subtitle>Загрузи документ</h2>
+              <div class="hero__description" data-js-pagination-content-description>
+                <p>Загружай в систему любой документ которые надо подписать, договор, акт выполненных работ, да что угодно</p>
+              </div>
+              <h2 class="hero__subtitle" data-js-pagination-content-subtitle>Подпиши и отправь</h2>
+              <div class="hero__description" data-js-pagination-content-description>
+                <p>Подписывай своей электронно-цифровой подписью и за долю секунды отправь партнеру или компании. Он подписывает в ответ и все! Готово!</p>
+              </div>
+              <button type="button" class="hero__button button">
+                Попробовать Бесплатно
+              </button>
+            </div>
+          </div>
+          <div class="hero__extra">
+            <div class="hero__extra-pagination pagination pagination--circle">
+              <ul class="pagination__list">
+                <li class="pagination__item">
+                  <button 
+                    class="pagination__button is-active"
+                    type="button"
+                    id="pagination-number-1"
+                    aria-controls="pagination-image-1"
+                    aria-current="true"
+                    data-js-pagination-button-extra
+                  >
+                  <span class="icon icon--circle"></span>
+                  </button>
+                </li>
+                <li class="pagination__item">
+                  <button 
+                    class="pagination__button"
+                    type="button"
+                    id="pagination-number-2"
+                    aria-controls="pagination-image-2"
+                    data-js-pagination-button-extra
+                  >
+                  <span class="icon icon--circle"></span>
+                  </button>
+                </li>
+                <li class="pagination__item">
+                  <button 
+                    class="pagination__button"
+                    type="button"
+                    id="pagination-number-3"
+                    aria-controls="pagination-image-3"
+                    data-js-pagination-button-extra
+                  >
+                  <span class="icon icon--circle"></span>
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
     </div>
   </header>
   
 
   <main>
-    <section class="hero" data-js-pagination>
-      <div class="hero__inner container">
-        <div class="hero__body">
-          <h1 class="hero__title">Цифровой документооборот в три этапа:</h1>
-          <div class="hero__pagination pagination">
-            <ul class="pagination__list">
-              <li class="pagination__item">
-                <button 
-                  class="pagination__button is-active"
-                  type="button"
-                  id="pagination-number-1"
-                  aria-controls="pagination-image-1"
-                  aria-current="true"
-                  data-js-pagination-button
-                >
-                  1
-                </button>
-                <span aria-hidden="true" class="pagination__separator"></span>
-              </li>
-              <li class="pagination__item">
-                <button 
-                  class="pagination__button"
-                  type="button"
-                  id="pagination-number-2"
-                  aria-controls="pagination-image-2"
-                  data-js-pagination-button
-                >
-                  2
-                </button>
-                <span aria-hidden="true" class="pagination__separator"></span>
-              </li>
-              <li class="pagination__item">
-                <button 
-                  class="pagination__button"
-                  type="button"
-                  id="pagination-number-3"
-                  aria-controls="pagination-image-3"
-                  data-js-pagination-button
-                >
-                  3
-                </button>
-              </li>
-            </ul>
-          </div>
-          <h2 class="hero__subtitle is-active" data-js-pagination-content-subtitle>Быстрая регистрация</h2>
-          <div class="hero__description is-active" data-js-pagination-content-description>
-            <p>Мы создали, возможно, самую простую регистрацию. Регистрируйся, получай полный доступ к сервису и 1000 подписей документов в подарок!</p>
-          </div>
-          <h2 class="hero__subtitle" data-js-pagination-content-subtitle>Загрузи документ</h2>
-          <div class="hero__description" data-js-pagination-content-description>
-            <p>Загружай в систему любой документ которые надо подписать, договор, акт выполненных работ, да что угодно</p>
-          </div>
-          <h2 class="hero__subtitle" data-js-pagination-content-subtitle>Подпиши и отправь</h2>
-          <div class="hero__description" data-js-pagination-content-description>
-            <p>Подписывай своей электронно-цифровой подписью и за долю секунды отправь партнеру или компании. Он подписывает в ответ и все! Готово!</p>
-          </div>
-          <button type="button" class="hero__button button">
-            Попробовать Бесплатно
-          </button>
-        </div>
-      </div>
-      <div class="hero__extra">
-        <div class="hero__extra-pagination pagination pagination--circle">
-          <ul class="pagination__list">
-            <li class="pagination__item">
-              <button 
-                class="pagination__button is-active"
-                type="button"
-                id="pagination-number-1"
-                aria-controls="pagination-image-1"
-                aria-current="true"
-                data-js-pagination-button-extra
-              >
-              <span class="icon icon--circle"></span>
-              </button>
-            </li>
-            <li class="pagination__item">
-              <button 
-                class="pagination__button"
-                type="button"
-                id="pagination-number-2"
-                aria-controls="pagination-image-2"
-                data-js-pagination-button-extra
-              >
-              <span class="icon icon--circle"></span>
-              </button>
-            </li>
-            <li class="pagination__item">
-              <button 
-                class="pagination__button"
-                type="button"
-                id="pagination-number-3"
-                aria-controls="pagination-image-3"
-                data-js-pagination-button-extra
-              >
-              <span class="icon icon--circle"></span>
-              </button>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="hero__wrapper-image">
-        <img 
-          src="images/hero/1.png" 
-          alt="" class="hero__image is-active"
-          id="pagination-image-1"
-          aria-labelledby="pagination-number-1"
-          width="1303" height="725"
-          data-js-pagination-content-image
-        >
-      </div>
-
-      <div class="hero__wrapper-image">
-        <img 
-          src="images/hero/2.png" 
-          alt="" class="hero__image"
-          id="pagination-image-2"
-          aria-labelledby="pagination-number-2"
-          width="1303" height="725"
-          data-js-pagination-content-image
-        >
-      </div>
-
-      <div class="hero__wrapper-image">
-        <img 
-          src="images/hero/3.png" 
-          alt="" class="hero__image"
-          id="pagination-image-3"
-          aria-labelledby="pagination-number-3"
-          width="1303" height="725"
-          data-js-pagination-content-image
-        >
-      </div>
-    </section>
-
     <section class="advantages">
       <div class="advantages__inner">
         <ul class="advantages__list">

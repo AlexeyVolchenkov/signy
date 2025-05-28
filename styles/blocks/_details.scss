@@ -1,6 +1,7 @@
 @use '../helpers/' as *;
 
 .details {
+  padding-bottom: rem(20);
   &__inner {
     padding-block: rem(25);
     flex-direction: column;

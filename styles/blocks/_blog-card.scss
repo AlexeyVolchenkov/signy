@@ -6,11 +6,13 @@
     row-gap: rem(7);
     justify-items: left;
     align-items: center;
+    justify-self: left;
     max-width: rem(360);
   }
 
   &__image {
     padding-bottom: rem(10);
+    align-self: center;
   }
 
   &__time {
@@ -27,7 +29,7 @@
   &__list {
     display: flex;
     flex-wrap: wrap;
-    column-gap: rem(14);
+    gap: rem(14) rem(14);
   }
 
   &__tag {

@@ -12,9 +12,16 @@
   }
 
   &__main-card {
-    display: flex;
+    display: grid;
     column-gap: rem(43);
     padding-bottom: rem(24);
+    grid-template-columns: 60% 40%;
+
+    @include tablet {
+      grid-template-columns: 1fr;
+      align-self: center;
+      max-width: rem(668);
+    }
   }
 
   &__title {

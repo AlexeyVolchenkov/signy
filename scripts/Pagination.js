@@ -18,6 +18,12 @@ class Pagination {
     ariaCurrent: 'aria-current',
   }
 
+  images = {
+    firstBackground: '../images/hero/1.png',
+    secondBackground: '../images/hero/2.png',
+    thirdBackground: '../images/hero/3.png',
+  }
+
   constructor(rootElement) {
     this.rootElement = rootElement
     this.buttonElements = this.rootElement.querySelectorAll(this.selector.button)
@@ -51,10 +57,16 @@ class Pagination {
       element.setAttribute(this.stateAttributes.ariaCurrent, isActive.toString())
     })
 
+
     this.contentImageElements.forEach((element, index) => {
       const isActive = activePaginationIndex === index
-
-      element.classList.toggle(this.stateClasses.isActive, isActive)
+      const varExist = element.style.getPropertyValue('--bgImage') !== ''
+      
+      if (varExist) {
+        element.style.setProperty('--bgImage', `url(../../images/hero/${activePaginationIndex + 1}.png)`)
+      } else {
+        element.classList.toggle(this.stateClasses.isActive, isActive)
+      }
     })
 
     this.contentSubtitleElements.forEach((element, index) => {
@@ -88,6 +100,7 @@ class Pagination {
       })
     })
   }
+
 }
 
 class PaginationCollection {
