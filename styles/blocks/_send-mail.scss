@@ -1,11 +1,12 @@
 @use '../helpers/' as *;
 
 .send-mail {
+  padding-top: rem(20);
+  padding-bottom: fluid(90, 25);
   background-color: var(--color-gray-light);
 
   &__inner {
     padding-top: rem(56);
-    padding-bottom: fluid(90, 25);
     padding-inline: 1rem;
     flex-direction: column;
     align-items: center;
@@ -14,6 +15,19 @@
     @include tablet {
       padding-top: rem(40);
     }
+  }
+
+  &__already {
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(30);
+    align-items: center;
+    text-align: center;
+    padding-inline: 1rem;
+  }
+
+  &__subtitle {
+    max-width: rem(500);
   }
 
   &__form {

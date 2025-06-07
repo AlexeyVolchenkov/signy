@@ -1,0 +1,42 @@
+@use '../helpers/' as *;
+
+.switchers {
+  padding-bottom: rem(48);
+  justify-self: center;
+  max-width: rem(785);
+  width: 100%;
+
+  @include mobile {
+    padding-bottom: rem(24);
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__previous,
+  &__next {
+    display: grid;
+    row-gap: rem(15);
+    border: none;
+    background-color: transparent;
+
+    &.disabled {
+      pointer-events: none;
+      color: var(--color-gray)
+    }
+
+    @include hover {
+      color: var(--color-blue-light);
+    }
+  }
+
+  &__previous {
+    text-align: left;
+  }
+
+  &__next {
+    text-align: right;
+  }
+}

@@ -8,6 +8,7 @@
     display: grid;
     row-gap: rem(19);
     justify-items: start;
+    align-items: flex-start;
     width: fluid(502, 280);
 
     @include tablet {

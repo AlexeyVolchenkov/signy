@@ -3,6 +3,7 @@
 .logo {
   max-width: rem(130);
   height: auto;
+  flex-shrink: 0;
 
   @include mobile {
     max-width: rem(91);

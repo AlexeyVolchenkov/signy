@@ -1,0 +1,59 @@
+@use '../helpers/' as *;
+
+.auth-modal {
+  border: var(--border);
+  border-radius: rem(10);
+
+  &__content {
+    display: grid;
+    row-gap: rem(25);
+  }
+
+  &__title {
+    max-width: rem(362);
+    text-align: center;
+  }
+
+  &__form {
+    display: grid;
+    justify-content: center;
+    row-gap: rem(8);
+  }
+
+  &__close {
+    &-button {
+      --size: #{rem(27)};
+
+      @include square(var(--size));
+
+      position: relative;
+      display: flex;
+      justify-self: flex-end;
+      border: none;
+      
+      &-line {
+        position: absolute;
+        width: rem(24);
+        height: 3px;
+        border-radius: 1rem;
+        background-color: var(--color-blue-dark);
+
+        &:first-child {
+          transform-origin: left;
+          translate: -3px 0px;
+          rotate: 45deg;
+        }
+
+        &:last-child {
+          transform-origin: right;
+          translate: -10px 0px;
+          rotate: -45deg;
+        }
+      }
+    }
+  }
+
+  &::backdrop {
+    backdrop-filter: blur(rem(5)) brightness(0.4) contrast(1.3);
+  }
+}

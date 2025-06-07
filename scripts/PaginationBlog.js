@@ -71,23 +71,25 @@ class PaginationBlog {
     liArticle.classList.add('tabs__item')
     
     liArticle.innerHTML = `
-      <div class="blog-card" id=${id}>
-        <img 
-          src="images/blog-card/headsets-on-table.jpg" 
-          alt="" 
-          class="blog-card__image"
-          width="370" height="371"
-        />
-        <div class="blog-card__body">
-          <time datetime="2020-03-05" class="blog-card__time">${time}</time>
-          <h2 class="blog-card__title">${title}</h2>
-          <ul class="blog-card__list" data-js-card-list-tags-article>
-          </ul>
-          <div class="blog-card__description">
-            <p>${description}</p>
+      <a href="blog-post.html?id=${id}" class="blog-card__link-article">
+        <div class="blog-card" id=${id}>
+          <img 
+            src="images/blog-card/headsets-on-table.jpg" 
+            alt="" 
+            class="blog-card__image"
+            width="370" height="371"
+          />
+          <div class="blog-card__body">
+            <time datetime="2020-03-05" class="blog-card__time">${time}</time>
+            <h2 class="blog-card__title">${title}</h2>
+            <ul class="blog-card__list" data-js-card-list-tags-article>
+            </ul>
+            <div class="blog-card__description">
+              <p>${description}</p>
+            </div>
           </div>
         </div>
-      </div>
+      </a>
     `
 
     const listTagsArticleElement = liArticle.querySelector(this.selectors.listTagsArticle)

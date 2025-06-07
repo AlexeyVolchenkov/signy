@@ -9,9 +9,9 @@
   <script src="./scripts/main.js" type="module"></script>
 </head>
 <body>
-  <header class="header" data-js-header>
+  <header class="header" data-js-header data-js-pagination>
     <div class="header__inner container">
-      <a href="#" class="header__logo logo">
+      <a href="index.html" class="header__logo logo">
         <img 
         src="./icons/icon.svg" 
         alt="" 
@@ -19,28 +19,89 @@
         width="131" height="40" 
       />
       </a>
-
-      <div class="header__overlay" data-js-header-overlay>
-        <nav class="header__nav">
-          <ul class="header__nav-list">
-            <li class="header__nav-item">
-              <a href="#" class="header__nav-link">0 800 750 643</a>
-            </li>
-            <li class="header__nav-item">
-              <a href="#" class="header__nav-link">Про нас</a>
-            </li>
-            <li class="header__nav-item">
-              <a href="#" class="header__nav-link">Цены</a>
-            </li>
-            <li class="header__nav-item">
-              <a href="#" class="header__nav-link">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="header__actions">
-          <button type="button" class="header__actions-login button button--transparent">Вход</button>
-          <button type="button" class="header__actions-registration button">Регистрация</button>
-          SELECTOR
+      <div class="header__overlay-wrapper" data-js-header-overlay-wrapper>
+        <div class="header__overlay" data-js-header-overlay>
+          <nav class="header__nav">
+            <ul class="header__nav-list">
+              <li class="header__nav-item">
+                <div class="header__dropdown">
+                  <a href="#" class="header__dropdown-trigger">
+                    Позвонить
+                    <img 
+                      src="icons/header/arrow-down.svg" 
+                      alt="" 
+                      class="header__dropdown-trigger-arrow"
+                      width="10" height="10"
+                    />
+                  </a>
+                  <ul class="header__dropdown-list">
+                    <li class="header__dropdown-item">
+                      <a href="tel:+0800730643" class="header__dropdown-link">+0 800 730 643</a>
+                    </li>
+                    <li class="header__dropdown-item">
+                      <a href="tel:+380443345643" class="header__dropdown-link">+380 44 334 56 43</a>
+                    </li>
+                    <li class="header__dropdown-item">
+                      <a href="tel:+380443345643" class="header__dropdown-link">+380 44 334 56 43</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="header__nav-item">
+                <div class="header__dropdown">
+                  <a href="#" class="header__dropdown-trigger">
+                    Про нас
+                    <img 
+                      src="icons/header/arrow-down.svg" 
+                      alt="" 
+                      class="header__dropdown-trigger-arrow"
+                      width="10" height="10"
+                    />
+                  </a>
+                  <ul class="header__dropdown-list">
+                    <li class="header__dropdown-item">
+                      <a href="about-us.html" class="header__dropdown-link">Мы</a>
+                    </li>
+                    <li class="header__dropdown-item">
+                      <a href="blog.html" class="header__dropdown-link">Блог</a>
+                    </li>
+                    <li class="header__dropdown-item">
+                      <a href="video.html" class="header__dropdown-link">Видео</a>
+                    </li>
+                    <li class="header__dropdown-item">
+                      <a href="faq.html" class="header__dropdown-link">Вопросы</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="header__nav-item">
+                <a href="#" class="header__nav-link">Цены</a>
+              </li>
+              <li class="header__nav-item">
+                <a href="contacts.html" class="header__nav-link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__actions">
+            <button type="button" class="header__actions-login button button--transparent" onclick="window.authModal.showModal()">Вход</button>
+            <button type="button" class="header__actions-registration button" onclick="window.regModal.showModal()">Регистрация</button>
+            <div class="header__dropdown">
+              <a href="#" class="header__dropdown-trigger">
+                Рус
+                <img 
+                  src="icons/header/arrow-down.svg" 
+                  alt="" 
+                  class="header__dropdown-trigger-arrow"
+                  width="10" height="10"
+                />
+              </a>
+              <ul class="header__dropdown-list">
+                <li class="header__dropdown-item">
+                  <a href="#" class="header__dropdown-link">Укр</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -402,5 +463,103 @@
     </div>
     
   </footer>
+
+  <dialog class="auth-modal" id="authModal" aria-labelledby="auth-modal-title" data-js-form-modal>
+    <div class="auth-modal__wrapper">
+      <div class="auth-modal__content">
+        <form class="auth-modal__close" action="" method="dialog">
+          <button class="auth-modal__close-button" type="submit">
+            <span class="auth-modal__close-button-line"></span>
+            <span class="auth-modal__close-button-line"></span>
+          </button>
+        </form>
+
+        <h2 class="auth-modal__title" id="auth-modal-title">Заполни форму и наши менеджеры свяжутся с тобой</h2>
+        <form class="auth-modal__form" action="" method="submit">
+          <div class="connection-form__cell field">
+            <label for="firstName" class="field__label">Имя<span>*</span>:</label>
+            <input 
+              class="field__control"
+              id="firstName"
+              placeholder="Иван"
+              required
+            />
+          </div>
+          <div class="connection-form__cell field">
+            <label for="email" class="field__label">Электронная почта<span>*</span>:</label>
+            <input 
+              class="field__control"
+              id="email"
+              placeholder="ivan@mail.com"
+              required
+              type="email"
+            />
+          </div>
+          <div class="connection-form__cell field">
+            <label for="number" class="field__label">Телефон<span>*</span>:</label>
+            <input 
+              class="field__control"
+              id="number"
+              placeholder="+38 000 000 00 00"
+              required
+              type="number"
+            />
+          </div>
+          <button type="submit" class="auth-modal__form-button button">
+            Отправить
+          </button>
+        </form>
+      </div>
+    </div>
+  </dialog>
+
+  <dialog class="auth-modal" id="regModal" aria-labelledby="auth-modal-title" data-js-form-modal>
+    <div class="auth-modal__wrapper">
+      <div class="auth-modal__content">
+        <form class="auth-modal__close" action="" method="dialog">
+          <button class="auth-modal__close-button" type="submit">
+            <span class="auth-modal__close-button-line"></span>
+            <span class="auth-modal__close-button-line"></span>
+          </button>
+        </form>
+
+        <h2 class="auth-modal__title" id="auth-modal-title">Заполни форму и наши менеджеры свяжутся с тобой</h2>
+        <form class="auth-modal__form" action="" method="submit">
+          <div class="connection-form__cell field">
+            <label for="firstName" class="field__label">Имя<span>*</span>:</label>
+            <input 
+              class="field__control"
+              id="firstName"
+              placeholder="Иван"
+              required
+            />
+          </div>
+          <div class="connection-form__cell field">
+            <label for="email" class="field__label">Электронная почта<span>*</span>:</label>
+            <input 
+              class="field__control"
+              id="email"
+              placeholder="ivan@mail.com"
+              required
+              type="email"
+            />
+          </div>
+          <div class="connection-form__cell field">
+            <label for="number" class="field__label">Телефон<span>*</span>:</label>
+            <input 
+              class="field__control"
+              id="number"
+              placeholder="+38 000 000 00 00"
+              required
+              type="number"
+            />
+          </div>
+          <button type="submit" class="auth-modal__form-button button">
+            Отправить
+          </button>
+        </form>
+      </div>
+    </div>
+  </dialog>
 </body>
 </html>

@@ -2,9 +2,9 @@
 
 .connection-form {
   display: grid;
-    row-gap: rem(12);
+  row-gap: rem(12);
 
-    &-button {
-      justify-self: start;
-    }
+  &-button {
+    justify-self: start;
+  }
 }

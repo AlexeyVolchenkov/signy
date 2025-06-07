@@ -5,6 +5,8 @@ import AccordionCollection from './Accordion.js'
 import FormsValidationCollection from './FormsValidation.js'
 import ExpandableContentCollection from './ExpandableContent.js'
 import PaginationBlogCollection from './PaginationBlog.js'
+import BlogPost from './BlogPost.js'
+import ModalCollection from './Modal.js'
 
 new Header()
 new PaginationCollection()
@@ -13,3 +15,5 @@ new AccordionCollection()
 new FormsValidationCollection()
 new ExpandableContentCollection()
 new PaginationBlogCollection()
+new BlogPost()
+new ModalCollection()

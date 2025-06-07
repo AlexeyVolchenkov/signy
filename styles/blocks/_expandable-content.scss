@@ -1,11 +1,11 @@
 @use '../helpers/' as *;
 
 .expandable-content {
-  max-height: rem(242);
   overflow: hidden;
   position: relative;
 
   &:not(.is-expanded) {
+    max-height: rem(242);
     &::before {
       position: absolute;
       content: '';
@@ -26,8 +26,6 @@
   }
 
   &.is-expanded {
-    max-height: rem(930);
-
     .expandable-content__button {
       @include visually-hidden;
     }

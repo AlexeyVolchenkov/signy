@@ -1,0 +1,25 @@
+@use '../helpers/' as *;
+
+.error {
+  background: url('/images/404/404.jpg') center/cover no-repeat;
+  background-size: cover;
+
+  &__content {
+    padding-top: rem(550);
+    padding-bottom: rem(30);
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(20);
+    align-items: center;
+    color: var(--color-white)
+  }
+
+  &__button {
+    border-color: var(--color-white);
+    color: var(--color-white)
+  }
+
+  &__description {
+    text-align: center;
+  }
+}

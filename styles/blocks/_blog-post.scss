@@ -1,0 +1,45 @@
+@use '../helpers/' as *;
+
+.blog-post {
+  &__inner {
+    padding-bottom: rem(48);
+    flex-direction: column;
+  }
+
+  &__title {
+    padding-block: rem(24);
+
+    @include mobile {
+      padding-block: rem(9);
+    }
+  }
+
+  &__info {
+    padding-bottom: rem(24);
+    display: flex;
+    column-gap: rem(16);
+
+    @include mobile {
+      padding-bottom: rem(9);
+      flex-direction: column;
+      row-gap: rem(9);
+    }
+  }
+
+  &__content {
+    --columns: 2;
+
+    display: grid;
+    grid-template-columns: repeat(var(--columns), 1fr);
+    column-gap: rem(65);
+
+    &-image {
+      justify-self: center;
+      padding-bottom: rem(20);
+    }
+
+    @include tablet {
+      --columns: 1;
+    }
+  }
+}

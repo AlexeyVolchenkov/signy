@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Signy | FAQ</title>
+  <title>Signy | About us</title>
   <link rel="icon" href="/icons/favicon.svg" type="image/x-icon">
   <link rel="stylesheet" href="./styles/main.css">
   <script src="./scripts/main.js" type="module"></script>
@@ -121,108 +121,16 @@
   </header>
   
   <main>
-    <section class="faq-section">
-      <div class="faq-section__inner container">
-        <div class="faq-section__body accordion" data-js-accordion>
-          <ul class="accordion__list">
-            <li class="accordion__item" aria-selected="true" data-js-accordion-item>
-              <button type="button" class="accordion__item-button" data-js-accordion-button>
-                <h3 class="accordion__item-title">Почему круглую пиццу ставят в квадратную коробку, а нарезают треугольниками?</h3>
-              </button>
-              <div class="accordion__item-content is-active" data-js-accordion-content>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit officia maiores, ullam velit beatae porro, assumenda vero veritatis consequatur mollitia iste! Ab obcaecati quidem repellendus voluptatem assumenda rerum. Repellat, accusantium.</p>
-              </div>
-            </li>
-            <li class="accordion__item" aria-selected="false" data-js-accordion-item>
-              <button type="button" class="accordion__item-button" data-js-accordion-button>
-                <h3 class="accordion__item-title">Почему круглую пиццу ставят в квадратную коробку, а нарезают треугольниками?</h3>
-              </button>
-              <div class="accordion__item-content" data-js-accordion-content>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit officia maiores, ullam velit beatae porro, assumenda vero veritatis consequatur mollitia iste! Ab obcaecati quidem repellendus voluptatem assumenda rerum. Repellat, accusantium.</p>
-              </div>
-            </li>
-            <li class="accordion__item" aria-selected="false" data-js-accordion-item>
-              <button type="button" class="accordion__item-button" data-js-accordion-button>
-                <h3 class="accordion__item-title">Почему круглую пиццу ставят в квадратную коробку, а нарезают треугольниками?</h3>
-              </button>
-              <div class="accordion__item-content" data-js-accordion-content>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit officia maiores, ullam velit beatae porro, assumenda vero veritatis consequatur mollitia iste! Ab obcaecati quidem repellendus voluptatem assumenda rerum. Repellat, accusantium.</p>
-              </div>
-            </li>
-            <li class="accordion__item" aria-selected="false" data-js-accordion-item>
-              <button type="button" class="accordion__item-button" data-js-accordion-button>
-                <h3 class="accordion__item-title">Почему круглую пиццу ставят в квадратную коробку, а нарезают треугольниками?</h3>
-              </button>
-              <div class="accordion__item-content" data-js-accordion-content>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit officia maiores, ullam velit beatae porro, assumenda vero veritatis consequatur mollitia iste! Ab obcaecati quidem repellendus voluptatem assumenda rerum. Repellat, accusantium.</p>
-              </div>
-            </li>
-            <li class="accordion__item" aria-selected="false" data-js-accordion-item>
-              <button type="button" class="accordion__item-button" data-js-accordion-button>
-                <h3 class="accordion__item-title">Почему круглую пиццу ставят в квадратную коробку, а нарезают треугольниками?</h3>
-              </button>
-              <div class="accordion__item-content" data-js-accordion-content>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit officia maiores, ullam velit beatae porro, assumenda vero veritatis consequatur mollitia iste! Ab obcaecati quidem repellendus voluptatem assumenda rerum. Repellat, accusantium.</p>
-              </div>
-            </li>
-            <li class="accordion__item" aria-selected="false" data-js-accordion-item>
-              <button type="button" class="accordion__item-button" data-js-accordion-button>
-                <h3 class="accordion__item-title">Почему круглую пиццу ставят в квадратную коробку, а нарезают треугольниками?</h3>
-              </button>
-              <div class="accordion__item-content" data-js-accordion-content>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit officia maiores, ullam velit beatae porro, assumenda vero veritatis consequatur mollitia iste! Ab obcaecati quidem repellendus voluptatem assumenda rerum. Repellat, accusantium.</p>
-              </div>
-            </li>
-          </ul>
+    <section class="error">
+      <div class="error__content">
+        <div class="error__description">
+          <p>
+            Мы честно старались найти, но этой страницы по всей видимости не существует.
+          </p>
         </div>
-      </div>
-      </div>
-    </section>
-
-    <section class="connection connection--blue-background" aria-labelledby="connection-title">
-      <div class="connection__inner container connection__inner--center">
-        <h2 class="connection__title" id="connection-title">Нет ответа на интересующий вопрос?</h2>
-        <h3 class="connection__subtitle">Заполни форму и наши менеджеры свяжутся с тобой</h3>
-        <form class="connection-form" action="/">
-          <div class="connection-form__cell field">
-            <label for="firstName" class="field__label">Имя<span>*</span>:</label>
-            <input 
-              class="field__control"
-              id="firstName"
-              placeholder="Иван"
-              required
-            />
-          </div>
-          <div class="connection-form__cell field">
-            <label for="email" class="field__label">Электронная почта<span>*</span>:</label>
-            <input 
-              class="field__control"
-              id="email"
-              placeholder="ivan@mail.com"
-              required
-              type="email"
-            />
-          </div>
-          <div class="connection-form__cell field">
-            <label for="number" class="field__label">Телефон<span>*</span>:</label>
-            <input 
-              class="field__control"
-              id="number"
-              placeholder="+38 000 000 00 00"
-              required
-              type="number"
-            />
-          </div>
-          <div class="connection-form__cell field">
-            <label for="message" class="field__label">Сообщение<span>*</span>:</label>
-            <textarea 
-              class="field__control field__control--text-area"
-              id="message"
-              placeholder="введите тут"
-            ></textarea>
-          </div>
-          <button class="connection-form-button button">Отправить</button>
-        </form>
+        <button class="error__button button button--transparent">
+          на главную
+        </button>
       </div>
     </section>
   </main>

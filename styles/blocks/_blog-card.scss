@@ -66,6 +66,12 @@
         width: 100%;
       }
     }
+
+    &-article {
+      @include hover {
+        transform: scale(1.03);
+      }
+    }
   }
 
   &--big {
